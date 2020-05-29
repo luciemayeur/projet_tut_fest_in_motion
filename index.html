@@ -12,6 +12,9 @@
         
         <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     </head>
     
     <body>
@@ -128,15 +131,16 @@
                     <a href="contact.html">Contact</a>
                 </div>
                 <div id="localisation">
-                    <div>
-                        <h3>FEST'IN MOTION</h3>
-                        <p>
+                    <div id="texte_carte">
+                        <h3 id="titre_carte">FEST'IN MOTION</h3>
+                        <p id="adresse_carte">
                             La Citadelle<br/>
                             Avenue Pierre de Coubertin<br/>
                             62100 Calais
                         </p>
                     </div>
-                    <img src="images/map.PNG" alt="Carte de la Citadelle" id="carte" />
+                    
+                    <div id="carte" style="width: 400px; height: 300px;"></div>
                 </div>
             </div>
             
@@ -145,10 +149,23 @@
             <div>
                 <span id="droits">© 2020 Fest'In Motion - Tous droits réservés</span>
                 
-                <span id="realisation">Site réalisé par <a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a></span>
+                <span id="realisation">Site réalisé par <a href="https://www.agence-horizon.fr/"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a></span>
                 
                 <span id="reglements"><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a> | <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></span>
             </div>
         </footer>
+        
+        <script>
+            var mymap = L.map('carte').setView([50.956413, 1.842957], 15);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                maxZoom: 18,
+                minZoom: 2,
+                attribution: 'Hazebrouck - Plan des travaux',
+                id: 'mapbox.streets'
+            }).addTo(mymap);
+            
+            L.marker([50.956413, 1.842957]).addTo(mymap);
+            /*.bindPopup("<strong>FEST'IN MOTION</strong><p>La Citadelle<br/>Avenue Pierre de Coubertin<br/>62100 Calais</p>").openPopup()*/
+        </script>
     </body>
 </html>
