@@ -16,8 +16,8 @@
     
     <body>
         <header>
-            <a href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
-            <nav>
+            <a href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" id="logo" /></a>
+            <nav id="menu">
                 <a href="evenement.html">Événement</a>
                 <a href="inscription.html">Inscription</a>
                 <a href="partenaires.html">Partenaires</a>
@@ -27,19 +27,25 @@
                 <a href="contact.html">Contact</a>
             </nav>
             
-            <a href="#"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
-            <a href="#"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
-            <a href="#"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
-            <a href="#"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
-            <a href="#"><img src="images/icon_panier.png" alt="Lien Panier"></a>
+            <div id="reseaux_sociaux">
+                <a href="https://www.facebook.com/FestInMotion/"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
+                <a href="https://www.instagram.com/festinmotion/"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
+                <a href="https://twitter.com/FestInMotion"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
+                <a href="https://www.youtube.com/channel/UC1ThYZMw6srQtw7cKzci-Uw"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
+                <a href="panier.html"><img src="images/icon_panier.png" alt="Lien Panier"></a>
+            </div>
             
-            <button>FR</button>
-            <button>EN</button>
+            <div id="langues">
+                <button>FR</button>
+                <button>EN</button>
+            </div>
         </header>
         
+        
+        
         <footer>
-            <div>
-                <div>
+            <div id="top_footer">
+                <div id="liens">
                     <a href="evenement.html">Événement</a>
                     <a href="inscription.html">Inscription</a>
                     <a href="partenaires.html">Partenaires</a>
@@ -48,7 +54,7 @@
                     <a href="faq.html">F.A.Q.</a>
                     <a href="contact.html">Contact</a>
                 </div>
-                <div>
+                <div id="localisation">
                     <div>
                         <h3>FEST'IN MOTION</h3>
                         <p>
@@ -57,18 +63,18 @@
                             62100 Calais
                         </p>
                     </div>
-                    <img src="images/map.PNG" alt="Carte de la Citadelle" />
+                    <img src="images/map.PNG" alt="Carte de la Citadelle" id="carte" />
                 </div>
             </div>
             
             <!-- Ligne horizontale -->
             
             <div>
-                © 2020 Fest'In Motion - Tous droits réservés<br/>
+                <span id="droits">© 2020 Fest'In Motion - Tous droits réservés</span>
                 
-                Site réalisé par <a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a><br/>
+                <span id="realisation">Site réalisé par <a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a></span>
                 
-                <a href="#">Mentions légales</a> | <a href="#">Politiques de confidentialité</a> | <a href="#">Politique des cookies</a> | <a href="#">Conditions de ventes</a> | <a href="#">Contactez-nous</a>
+                <span id="reglements"><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a> | <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></span>
             </div>
         </footer>
     </body>
