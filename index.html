@@ -16,8 +16,9 @@
     
     <body>
         <header>
-            <a href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
-            <nav>
+            <a id='image' href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            
+            <nav id='barre'>
                 <a href="evenement.html">Événement</a>
                 <a href="inscription.html">Inscription</a>
                 <a href="partenaires.html">Partenaires</a>
@@ -26,30 +27,37 @@
                 <a href="faq.html">F.A.Q.</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            
-            <a href="#"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
-            <a href="#"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
+            <nav id='reseaux'>
+            <a href="https://www.facebook.com/FestIn-Motion-100813134998756/?modal=admin_todo_tour"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
+            <a href="https://www.instagram.com/festinmotion/"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
             <a href="#"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
             <a href="#"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
             <a href="#"><img src="images/icon_panier.png" alt="Lien Panier"></a>
-            
+            </nav>
+            <div>
             <button>FR</button>
             <button>EN</button>
+            </div>
         </header>
         
         <footer>
-            <div>
-                <div>
-                    <a href="evenement.html">Événement</a>
+            <div id="haut" class="flex">
+                <div id="evenement">
+                   <div> <a href="evenement.html">Événement</a>
                     <a href="inscription.html">Inscription</a>
                     <a href="partenaires.html">Partenaires</a>
+                    </div>
+                    <div>
                     <a href="informations.html">Informations</a>
                     <a href="galeries.html">Galeries</a>
                     <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div>
+                    </div>
                     <div>
+                    <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div id="localisation">
                         <h3>FEST'IN MOTION</h3>
                         <p>
                             La Citadelle<br/>
@@ -57,18 +65,22 @@
                             62100 Calais
                         </p>
                     </div>
-                    <img src="images/map.PNG" alt="Carte de la Citadelle" />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.2295089641552!2d1.8407900156564598!3d50.95646077954841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc3f09b3661cef%3A0xea892b0a912bb2f5!2sCitadelle%20de%20Calais!5e0!3m2!1sfr!2sfr!4v1590764279228!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
             
-            <!-- Ligne horizontale -->
+            <div id="trait"><hr></div>
             
-            <div>
+            <div id="bas">
+                <div id="droits">
                 © 2020 Fest'In Motion - Tous droits réservés<br/>
-                
-                Site réalisé par <a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a><br/>
-                
-                <a href="#">Mentions légales</a> | <a href="#">Politiques de confidentialité</a> | <a href="#">Politique des cookies</a> | <a href="#">Conditions de ventes</a> | <a href="#">Contactez-nous</a>
+                </div>
+                <div id="horizon">
+                <p>Site réalisé par </p><a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a><br/>
+                </div>
+                <div id="mentions">
+                <a href="#">Mentions légales</a> | <a href="#">Politiques de confidentialité</a> | <a href="#">Politique des cookies</a> | <a href="#">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a>
+                </div>
             </div>
         </footer>
     </body>

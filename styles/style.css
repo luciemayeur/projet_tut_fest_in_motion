@@ -1,0 +1,146 @@
+*{
+    font-family: Noto Sans;
+}
+
+
+header{
+    padding: 10px;
+    background-color: white;
+    display: flex;
+}
+
+header #image{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
+header img{
+    width: 70%;
+	height: auto;
+}
+
+header #barre{
+    margin-top: 25px;
+}
+
+header #barre a{
+    text-decoration: none;
+    color: #0C3B4C;
+    margin: 20px;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+header #barre a:hover{
+    background-color:#0C3B4C;
+    color:white;
+    
+}
+
+header #reseaux{
+    width: 15%;
+    margin-top: 25px;
+}
+
+header #reseaux img{
+    width: 15%;
+	height: auto;
+}
+
+header #reseaux img:hover{
+    transform: scale(1.5);
+}
+
+header button{
+    background-color:transparent;
+    margin-top: 25px;
+    border:none;
+}
+
+header button:hover{
+    background-color:#0C3B4C;
+    color:white;
+}
+
+footer{
+    background-color: #3B3B3B;
+    color:white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+footer .flex{
+    display: flex;
+}
+
+footer #evenement{
+    display: flex;
+    
+}
+
+footer #evenement div{
+    display: block;
+    margin:50px;
+}
+
+footer #evenement a{
+    display: block;
+}
+
+footer #localisation{
+    margin-left: 60px;
+}
+
+footer iframe{
+    width: 150px;
+    height: 100px;
+    margin: 25px;
+    margin-left: 120px;
+}
+#trait{
+    background-color: white;
+    margin-left: 50px;
+    margin-right:50px;
+}
+
+#haut{
+    margin-left: 80px;
+}
+
+#bas{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 60px;
+    font-size: 14px; 
+    text-align: center;
+    
+}
+
+footer #droits{
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+footer #horizon{
+    width: 300px;
+    margin-left:150px;
+    display: flex;
+    
+}
+
+footer #mentions{
+    margin-left: 70px; 
+    margin-top: 8px;
+}
