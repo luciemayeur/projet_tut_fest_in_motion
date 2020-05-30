@@ -7,69 +7,99 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Ciném, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Accueil</title>
+        <title>FEST'IN MOTION - Contact</title>
         <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     </head>
     
     <body>
         <header>
-            <a href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
-            <nav>
-                <a href="#">Événement</a>
-                <a href="#">Inscription</a>
-                <a href="#">Partenaires</a>
-                <a href="#">Informations</a>
-                <a href="#">Galeries</a>
-                <a href="#">F.A.Q.</a>
-                <a href="#">Contact</a>
+            <a href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" id="logo" /></a>
+            <nav id="menu">
+                <a href="evenement.html">Événement</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="partenaires.html">Partenaires</a>
+                <a href="informations.html">Informations</a>
+                <a href="galeries.html">Galeries</a>
+                <a href="faq.html">F.A.Q.</a>
+                <a href="contact.html">Contact</a>
             </nav>
             
-            <a href="#"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
-            <a href="#"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
-            <a href="#"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
-            <a href="#"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
-            <a href="#"><img src="images/icon_panier.png" alt="Lien Panier"></a>
+            <div id="reseaux_sociaux">
+                <a href="https://www.facebook.com/FestInMotion/"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
+                <a href="https://www.instagram.com/festinmotion/"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
+                <a href="https://twitter.com/FestInMotion"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
+                <a href="https://www.youtube.com/channel/UC1ThYZMw6srQtw7cKzci-Uw"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
+                <a href="panier.html"><img src="images/icon_panier.png" alt="Lien Panier"></a>
+            </div>
             
-            <button>FR</button>
-            <button>EN</button>
+            <div id="langues">
+                <button id="french">FR</button>
+                <button id="english">EN</button>
+            </div>
         </header>
         
+        <div id="corps_page">
+        
+        </div>
+        
         <footer>
-            <div>
-                <div>
-                    <a href="#">Événement</a>
-                    <a href="#">Inscription</a>
-                    <a href="#">Partenaires</a>
-                    <a href="#">Informations</a>
-                    <a href="#">Galeries</a>
-                    <a href="#">F.A.Q.</a>
-                    <a href="#">Contact</a>
+            <div id="top_footer">
+                <div id="liens">
+                    <div id="bloc_liens1">
+                        <a href="evenement.html">Événement</a>
+                        <a href="inscription.html">Inscription</a>
+                        <a href="partenaires.html">Partenaires</a>
+                    </div>
+                    <div id="bloc_liens2">
+                        <a href="informations.html">Informations</a>
+                        <a href="galeries.html">Galeries</a>
+                        <a href="faq.html">F.A.Q.</a>
+                    </div>
+                    <div id="bloc_liens3">
+                        <a href="contact.html">Contact</a>
+                    </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>FEST'IN MOTION</h3>
-                        <p>
+                <div id="localisation">
+                    <div id="texte_carte">
+                        <h3 id="titre_carte">FEST'IN MOTION</h3>
+                        <p id="adresse_carte">
                             La Citadelle<br/>
                             Avenue Pierre de Coubertin<br/>
                             62100 Calais
                         </p>
                     </div>
-                    <img src="images/map.PNG" alt="Carte de la Citadelle" />
+                    
+                    <div id="carte" style="width: 250px; height: 180px;"></div>
                 </div>
             </div>
             
             <!-- Ligne horizontale -->
             
             <div>
-                © 2020 Fest'In Motion - Tous droits réservés<br/>
+                <span id="droits">© 2020 Fest'In Motion - Tous droits réservés</span>
                 
-                Site réalisé par <a href="#"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a><br/>
+                <span id="realisation">Site réalisé par <a href="https://www.agence-horizon.fr/"><img src="images/logo_horizon.png" alt="Logo agence Horizon" style="width: 50px;"/></a></span>
                 
-                <a href="#">Mentions légales</a> | <a href="#">Politiques de confidentialité</a> | <a href="#">Politique des cookies</a> | <a href="#">Conditions de ventes</a> | <a href="#">Contactez-nous</a>
+                <span id="reglements"><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a> | <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></span>
             </div>
         </footer>
+        
+        <script>
+            var mymap = L.map('carte').setView([50.956413, 1.842957], 14);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                maxZoom: 18,
+                minZoom: 2,
+                id: 'mapbox.streets'
+            }).addTo(mymap);
+            
+            L.marker([50.956413, 1.842957]).addTo(mymap)
+            /*.bindPopup("<strong>FEST'IN MOTION</strong><p>La Citadelle<br/>Avenue Pierre de Coubertin<br/>62100 Calais</p>").openPopup()*/;
+        </script>
     </body>
 </html>

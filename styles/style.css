@@ -1,7 +1,13 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Noto Sans;
 }
 
+html{
+    font-size: 62.5%;
+}
 
 header{
     padding: 10px;
@@ -9,7 +15,7 @@ header{
     display: flex;
 }
 
-header #image{
+header #logo{
     display: inline-block;
     width: 10%;
     text-align: center;
@@ -20,11 +26,11 @@ header img{
 	height: auto;
 }
 
-header #barre{
+header #menu{
     margin-top: 25px;
 }
 
-header #barre a{
+header #menu a{
     text-decoration: none;
     color: #0C3B4C;
     margin: 20px;
@@ -32,23 +38,23 @@ header #barre a{
     border-radius: 5px;
 }
 
-header #barre a:hover{
+header #menu a:hover{
     background-color:#0C3B4C;
     color:white;
     
 }
 
-header #reseaux{
+header #reseaux_sociaux{
     width: 15%;
     margin-top: 25px;
 }
 
-header #reseaux img{
+header #reseaux_sociaux img{
     width: 15%;
 	height: auto;
 }
 
-header #reseaux img:hover{
+header #reseaux_sociaux img:hover{
     transform: scale(1.5);
 }
 
@@ -82,41 +88,35 @@ footer .flex{
     display: flex;
 }
 
-footer #evenement{
+footer #liens{
     display: flex;
     
 }
 
-footer #evenement div{
+footer #liens div{
     display: block;
     margin:50px;
 }
 
-footer #evenement a{
+footer #liens a{
     display: block;
 }
 
-footer #localisation{
+footer #texte_carte{
     margin-left: 60px;
 }
 
-footer iframe{
-    width: 150px;
-    height: 100px;
-    margin: 25px;
-    margin-left: 120px;
-}
 #trait{
     background-color: white;
     margin-left: 50px;
     margin-right:50px;
 }
 
-#haut{
+#top_footer{
     margin-left: 80px;
 }
 
-#bas{
+#bottom_footer{
     padding-top: 10px;
     padding-bottom: 15px;
     display: flex;
@@ -133,14 +133,13 @@ footer #droits{
     margin-top: 15px;
 }
 
-footer #horizon{
+footer #realisation{
     width: 300px;
     margin-left:150px;
     display: flex;
     
 }
 
-footer #mentions{
+footer #reglements{
     margin-left: 70px; 
     margin-top: 8px;
-}
