@@ -39,8 +39,8 @@
             </div>
             
             <div id="langues">
-                <button>FR</button>
-                <button>EN</button>
+                <button id="french">FR</button>
+                <button id="english">EN</button>
             </div>
         </header>
         
@@ -75,7 +75,7 @@
                 </div>
             </section>
             
-            <section id="preview_galeries">
+            <section id="preview_galeries" class="item_page">
                 <h2 id="titre_preview_galeries">Notre galerie</h2>
                 <div id="preview_photos">
                     <img src="images/affiche1.jpg" alt="Affiche 1" id="preview_affiche1" />
@@ -89,7 +89,7 @@
                 </div>
             </section>
             
-            <section id="reservation">
+            <section id="reservation" class="item_page">
                 <h2 id="titre_reservation">Réservez vos places</h2>
                 <div id="contenu_reservation">
                     <a href="inscription.html" id="lien_reservation">Réservation</a>
@@ -106,7 +106,7 @@
                 </div>
             </section>
             
-            <section id="partenaires">
+            <section id="partenaires" class="item_page">
                 <h2 id="titre_partenaires">Nos bénévoles et partenariats</h2>
                 <p id="description_partenaires">Ils nous ont fait confiance et ils nous ont aidés pour ce projet incroyable.</p>
                 <div id="images_partenaires">
@@ -122,13 +122,19 @@
         <footer>
             <div id="top_footer">
                 <div id="liens">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galeries</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <div id="bloc_liens1">
+                        <a href="evenement.html">Événement</a>
+                        <a href="inscription.html">Inscription</a>
+                        <a href="partenaires.html">Partenaires</a>
+                    </div>
+                    <div id="bloc_liens2">
+                        <a href="informations.html">Informations</a>
+                        <a href="galeries.html">Galeries</a>
+                        <a href="faq.html">F.A.Q.</a>
+                    </div>
+                    <div id="bloc_liens3">
+                        <a href="contact.html">Contact</a>
+                    </div>
                 </div>
                 <div id="localisation">
                     <div id="texte_carte">
@@ -140,7 +146,7 @@
                         </p>
                     </div>
                     
-                    <div id="carte" style="width: 400px; height: 300px;"></div>
+                    <div id="carte" style="width: 250px; height: 180px;"></div>
                 </div>
             </div>
             
@@ -156,7 +162,7 @@
         </footer>
         
         <script>
-            var mymap = L.map('carte').setView([50.956413, 1.842957], 15);
+            var mymap = L.map('carte').setView([50.956413, 1.842957], 14);
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
                 maxZoom: 18,
                 minZoom: 2,
