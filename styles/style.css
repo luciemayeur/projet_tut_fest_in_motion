@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 html{
     font-size: 62.5%;
 }
 
+/* Header global */
+
 header{
-    padding: 10px;
-    background-color: white;
+    height: 150px;
+    background-color: #FFFFFF;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header #logo{
@@ -22,124 +27,188 @@ header #logo{
 }
 
 header img{
-    width: 70%;
+    width: 150px;
 	height: auto;
-}
-
-header #menu{
-    margin-top: 25px;
 }
 
 header #menu a{
     text-decoration: none;
+    font-weight: bold;
     color: #0C3B4C;
     margin: 20px;
-    font-size:18px;
+    padding: 5px;
+    font-size: 24px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 header #menu a:hover{
-    background-color:#0C3B4C;
-    color:white;
+    background-color: #0C3B4C;
+    color: #FFFFFF;
     
 }
 
 header #reseaux_sociaux{
-    width: 15%;
-    margin-top: 25px;
+    width: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header #reseaux_sociaux img{
-    width: 15%;
+    width: 35px;
 	height: auto;
+    transition: 0.3s;
 }
 
 header #reseaux_sociaux img:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+header #langues{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
 
 header button{
-    background-color:transparent;
-    margin-top: 25px;
-    border:none;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 header button:hover{
-    background-color:#0C3B4C;
-    color:white;
+    background-color: #0C3B4C;
+    color: #FFFFFF;
 }
+
+header button.active{
+    font-weight: bold;
+}
+
+/* Footer global */
 
 footer{
     background-color: #3B3B3B;
-    color:white;
+    color: #FFFFFF;
+    width: 100%;
+    height: 340px;
+}
+
+#top_footer{
+    width: 1500px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a{
     text-decoration: none;
-    color: white;
-    margin-left: 15px;
+    color: #FFFFFF;
 }
 
 footer a:hover{
     font-weight: bold;
 }
 
-footer .flex{
-    display: flex;
-}
-
 footer #liens{
+    width: 640px;
+    height: 140px;
     display: flex;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
 }
 
 footer #liens div{
-    display: block;
-    margin:50px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-footer #liens a{
-    display: block;
+footer #localisation{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer #texte_carte{
-    margin-left: 60px;
+    width: 290px;
+}
+
+footer #texte_carte #titre_carte{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer #texte_carte #adresse_carte{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+footer #carte .leaflet-control-zoom, footer #carte .leaflet-control-attribution{
+    display: none;
 }
 
 #trait{
-    background-color: white;
-    margin-left: 50px;
-    margin-right:50px;
-}
-
-#top_footer{
-    margin-left: 80px;
+    background-color: #FFFFFF;
+    margin: 0 50px;
 }
 
 #bottom_footer{
-    padding-top: 10px;
-    padding-bottom: 15px;
+    width: 1740px;
+    margin: auto;
+    margin-top: 11px;
     display: flex;
-    margin-left: 20px;
-    margin-right: 60px;
-    font-size: 14px; 
-    text-align: center;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;     
 }
 
 footer #droits{
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 15px;
+    width: 420px;
+    text-align: center;
 }
 
 footer #realisation{
-    width: 300px;
-    margin-left:150px;
+    width: 190px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer #realisation img{
+    width: 40px;
     
 }
 
 footer #reglements{
-    margin-left: 70px; 
-    margin-top: 8px;
+    width: 720px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+footer #reglements a{
+    margin: 0 4px;
+}
