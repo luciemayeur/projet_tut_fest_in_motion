@@ -44,8 +44,80 @@
             </div>
         </header>
         
-        <div id="corps_page">
+        <section id="banniere">
+            <h1 id="titre">Fest'In Motion</h1>
+            <div id="photos_baniere">
+                <img src="images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
+                <img src="images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
+                <img src="images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
+            </div>
+            <span id="chemin" class="item_page"><a href="index.html"><img src="images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Contact</span>
+        </section>
         
+        <div id="corps_page">
+            <section class="item_page titre_entete">
+                <h2 id="titre_contact">Contact</h2>
+                <p>
+                    Vous avez une demande, un question ?<br/>
+                    Prenez contact avec nous via les moyens mis à votre disposion ci-dessous.
+                </p>
+            </section>
+            
+            <!-- Ligne horizontale -->
+            
+            <section class="item_page contenu_contact">
+                <div id="infos_contact">
+                    <img class="logo" src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" />
+                    <p id="telephone_contact" class="element_contact">
+                        <strong>Téléphone :</strong> <a href="tel:+33321793232">03.21.79.32.32</a>
+                    </p>
+                    <p id="mail_contact" class="element_contact">
+                        <strong>Mail :</strong> <a href="mailto:festinmotion@gmail.com">festinmotion@gmail.com</a>
+                    </p>
+                    <p id="adresse_contact" class="element_contact">
+                        <strong>Adresse :</strong><br/>
+                        Université, SP<br/>
+                        16 Rue de l'Université<br/>
+                        62307 Lens
+                    </p>
+                </div>
+                <div id="formulaire_contact">
+                    <form method="post" action="contact.php">
+                        <div class="element_formulaire">
+                            <label for="civilite"><strong>Civilité</strong> <sup>*</sup></label><br/>
+                            <select name="civilite" id="civilite" required>
+                                <option value>Civilité</option>
+                                <option value="mr">Monsieur</option>
+                                <option value="mme">Madame</option>
+                                <option value="mlle">Mademoiselle</option>
+                            </select>
+                        </div>
+                        <div class="element_formulaire">
+                            <label for="prenom"><strong>Prénom</strong> <sup>*</sup></label><br/>
+                            <input type="text" name="prenom" id="prenom" required />
+                        </div>
+                        <div class="element_formulaire">
+                            <label for="nom"><strong>Nom</strong> <sup>*</sup></label><br/>
+                            <input type="text" name="nom" id="nom" required />
+                        </div>
+                        <div class="element_formulaire">
+                            <label for="mail"><strong>Email</strong> <sup>*</sup></label><br/>
+                            <input type="email" name="mail" id="mail" required />
+                        </div>
+                        <div class="element_formulaire">
+                            <label for="sujet"><strong>Sujet</strong></label><br/>
+                            <input type="text" name="sujet" id="sujet" />
+                        </div>
+                        <div class="element_formulaire">
+                            <label for="message"><strong>Message</strong> <sup>*</sup></label><br/>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                        <div class="element_formulaire">
+                            <input type="submit" id="envoie" value="ENVOYER" />
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
         
         <footer>
