@@ -469,6 +469,7 @@ footer #reglements a{
 }  
 }
 /*PARTENAIRES*/
+
 #chemin{
     color:white;
     font-size: 20px;
@@ -491,13 +492,12 @@ footer #reglements a{
     width: 5%;
 }
 
-#titre_partenaires{
-    position: absolute;
-    left:200px;
-    top:490px;
+#titre_partenairesp{
+    font-size: 50px;
+    margin-left: 95px;
 }
 
-#corps_page p{
+#texte_p_partenaires{
     padding-top: 20px;
     padding-bottom:20px;
     padding-left: 100px;
@@ -505,7 +505,7 @@ footer #reglements a{
     
 }
 
-.item_page{
+#corps_page .item_page{
     display: flex;
 	margin-left: 15%;
  	flex-basis: 25%;
