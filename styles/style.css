@@ -252,8 +252,9 @@ footer #reglements a{
 }
 
 #corps_page{
-    background-color: #0C3B4C;
+    background-color:rgba(12, 59, 76,0.5);
     padding: 100px;
+    color: white;
 }
 
 #entete{
@@ -465,4 +466,61 @@ footer #reglements a{
         display: block;
         flex-direction: column;
     }  
+}
+/*PARTENAIRES*/
+
+#chemin{
+    color:white;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+    position:absolute;
+    top:270px; 
+    left: 200px;
+    width:600px; 
+    height:400px; 
+    z-index:2;
+}
+
+#chemin a{
+    text-decoration:none;
+    color: white;
+}
+
+#icon_accueil{
+    width: 5%;
+}
+
+#titre_partenairesp{
+    font-size: 50px;
+    margin-left: 95px;
+}
+
+#texte_p_partenaires{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 100px;
+    font-size: 20px;
+    
+}
+
+#corps_page .item_page{
+    display: flex;
+	margin-left: 15%;
+ 	flex-basis: 25%;
+	text-align: center;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+.partenaire{
+    background-color: #AABAC0;
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+}
+
+.img_partenaire{
+    width:500px;
+    height: auto;
 }
