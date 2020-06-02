@@ -450,20 +450,19 @@ footer #reglements a{
 
 @media screen and (max-width: 1280px){
    #lavideo{
-    width: 100px;
-}
-   footer{
-    width: 830px; 
-    height: 800px;
-}
+        width: 100px;
+    }
+    footer{
+        width: 830px; 
+        height: 800px;
+    }
 
     #top_footer{
         display: block;
     }    
-    
+
     footer #localisation{
-    display: block;
-    flex-direction: column;
-    
-}  
+        display: block;
+        flex-direction: column;
+    }  
 }
