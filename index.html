@@ -15,6 +15,8 @@
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+        
+        <link href="http://fr.allfont.net/allfont.css?fonts=dosis" rel="stylesheet" type="text/css" />
     </head>
     
     <body>
@@ -45,12 +47,14 @@
         </header>
         
         <section id="banniere">
-            <h1 id="titre">Fest'In Motion</h1>
-            <div id="photos_baniere">
+            <div id="photos_banniere">
                 <img src="images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
                 <img src="images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
                 <img src="images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
             </div>
+            
+            <h1 id="titre">Fest'In Motion</h1>
+            
         </section>
         
         <div id="corps_page">
@@ -60,15 +64,15 @@
                 De l'animation, des rencontres avec des producteurs, des diffusions de films, ... Vous trouverez votre bonheur.</p>
             </section>
             
-            <section id="promo_vidéo" class="item_page">
-                <div id="vidéo">
-                    <video scr="videos/promotion_video.mp4" controls poster="images/video.jpg">
+            <section id="promo_video" class="item_page">
+                <div id="video">
+                    <video id='lavideo' scr="videos/promotion_video.mp4" controls poster="images/video.jpg">
                         Une erreur est survenue ! Il semblerait que votre navigateur ne puisse pas lire notre vidéo.
                     </video>
                 </div>
                 
                 <div id="texte_video">
-                    <h2 id="titre_video">Vous ne nous connaisez pas ?</h2>
+                    <h2 id="titre_video">Vous ne nous connaissez pas ?</h2>
                     <p id="description_video">Ne vous inquiétez pas. Regardez notre vidéo vous montrant tout l'organisation de notre événement.<br/>
                     <br/>
                     De la préparation des projections jusqu'à l'organisation des stands, on vous raconte tout.</p>
@@ -92,16 +96,21 @@
             <section id="reservation" class="item_page">
                 <h2 id="titre_reservation">Réservez vos places</h2>
                 <div id="contenu_reservation">
+                    <div id='butt_reservation'>
                     <a href="inscription.html" id="lien_reservation">Réservation</a>
-                    
+                    </div>
                     <span id="description_reservation">Prenez vos places pour profiter de notre spectacle.</span>
                     
                     <div id="tarifs">
-                        <span id="prix_adulte"><span>15</span>€00 / adulte</span>
-                        
-                        <span id="prix_enfant"><span>10</span>€00 / enfant<sup>*</sup></span>
-                        
+                        <div id="prix_adulte">
+                        <span>15</span>€00 / adulte
+                        </div>
+                        <div id="prix_enfant">
+                        <span>10</span>€00 / enfant<sup>*</sup>
+                        </div>
+                        <div>
                         <span id="explication_asterisque"><sup>*</sup>Correspond aux enfants de moins de 10 ans</span>
+                        </div>
                     </div>
                 </div>
             </section>

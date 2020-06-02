@@ -212,3 +212,238 @@ footer #reglements{
 footer #reglements a{
     margin: 0 4px;
 }
+
+#banniere{
+    position: relative; 
+    height: 300px;
+    overflow: hidden;   
+    display : flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+#banniere #photos_banniere{
+    position: absolute;
+    z-index: 2; 
+    text-align: center;
+    opacity: 60%;
+}
+
+#banniere #titre{
+    line-height: 1;
+    margin-bottom: 10px;
+    position:absolute;
+    top:60px; 
+    width:600px; 
+    height:400px; 
+    z-index:2;
+    color: #EF476F;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 80px;
+}
+
+#photos_banniere img{
+    width: 33%;
+    height:auto;
+}
+
+#corps_page{
+    background-color: #0C3B4C;
+    padding: 100px;
+}
+
+#entete{
+    background-color:#EF476F;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+
+#entete #titre_entete{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#entete #description_entete{
+    font-size: 25px;
+}
+
+#promo_video{
+    background-color: rgba(239, 71, 111, 0.35);
+    color: white;
+    display: flex;
+}
+
+#lavideo{
+    width: 800px;
+}
+
+#texte_video{
+    margin:30px;
+    padding-top: 110px;
+}
+
+#titre_video{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#description_video{
+    font-size: 20px;
+}
+
+#preview_galeries{
+    background-color: #118AB2;
+    color: white;
+    text-align: center;
+    padding-bottom:20px;
+    margin-top: 40px;
+}
+
+#titre_preview_galeries{
+    font-size: 40px;
+    padding: 20px;
+}
+
+#preview_photos{
+    display: flex;
+	margin-left: 5%;
+ 	flex-basis: 25%;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#preview_photos img{
+    width: 350px;
+    text-align: center;
+	margin: 4px;
+    margin-bottom:15px;
+	opacity: 50%;	
+}
+
+#preview_photos img:hover{
+    opacity:1;
+}
+
+#reservation{
+    background-color:#EF476F;
+    text-align: center;
+    border-radius: 80px;
+    color: white;
+    padding: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#reservation #titre_reservation{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+#reservation #contenu_reservation{
+    font-size: 25px;
+    display: flex;
+}
+
+#contenu_reservation #butt_reservation{
+    padding-top: 50px;
+}
+
+#contenu_reservation #lien_reservation{
+    background-color: #41D882;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding:15px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 150px;
+    
+}
+
+#contenu_reservation #description_reservation{
+    width: 400px;
+    margin-left: 180px;
+    padding-top: 50px;
+}
+
+#tarifs{
+    display: block;
+    margin-left: 150px;
+}
+
+#prix_adulte{
+    padding-bottom: 20px;
+}
+
+#prix_adulte span{
+    font-size:40px;
+}
+
+#prix_enfant{
+   padding-bottom: 40px;  
+}
+
+#prix_enfant span{
+    font-size:40px;
+}
+
+#explication_asterisque{
+    font-size: 15px;
+}
+
+#partenaires{
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom:200px;
+    
+}
+
+#titre_partenaires{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#description_partenaires{
+    font-size: 20px;
+}
+
+#images_partenaires img{
+    position:absolute;
+    width:250px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+#partenaire1{
+    left: 130px;
+    top:3310px;
+}
+
+#partenaire2{
+    left: 450px; 
+}
+
+#partenaire3{
+    left: 750px; 
+    top:3320px;
+}
+
+#partenaire4{
+    left: 1050px; 
+    top:3350px; 
+}
+
+#partenaire5{
+    left: 1350px; 
+    top:3300px;
+}
