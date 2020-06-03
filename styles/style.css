@@ -685,6 +685,96 @@ footer #reglements a{
     font-size: 25px;
 }
 
+/*GALERIES*/
+
+#titre_galeries{
+    font-size: 50px;
+    margin-left: 350px;
+}
+
+#texte_p_galeries{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 370px;
+    font-size: 20px; 
+}
+
+.contenu_galeries{
+    
+}
+
+.titre_categorie{
+    text-transform: uppercase;
+    color:#EF476F;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top:50px;
+    margin-left:250px;
+    font-family: "Dosis";
+}
+
+.contenu_galeries{
+    color: white;
+    padding-bottom:20px;
+    margin-top: 40px;
+}
+
+.ensemble_categorie{
+    display: flex;
+	margin-left: 8%;
+ 	flex-basis: 25%;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.ensemble_categorie img{
+    width: 450px;
+    text-align: center;
+	margin: 4px;
+    margin-bottom:15px;	
+}
+
+.videos{
+    padding-left: 60px;
+    margin-left: 50px; 
+}
+
+#presse_galerie{
+    width: 700px;
+
+}
+
+#lien_telechargement_presse{
+  background-color: #41D882;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    align-items: center; 
+    border-style: none;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 250px;
+}
+
+.titre_communique{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 200px;
+    color:#EF476F;
+    font-family: "Dosis";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*PANIER*/
+
 
 
 
