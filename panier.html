@@ -57,7 +57,64 @@
         </section>
         
         <div id="corps_page">
-        
+            <section class="item_page titre_entete">
+                <h2 id="titre_panier">Panier</h2>
+                <p>Retrouvez ci-dessous le résumé de votre commande pour assister au festival.</p>
+            </section>
+            
+            <div id="trait"><hr></div>
+            <!-- Ligne horizontale -->
+            
+            <section class="item_page contenu_panier">
+                <div class="panier_detail">
+                    <h3 class="titre_panier_vue">Votre panier</h3>
+                    
+                    <!-- Ligne horizontale -->
+                    
+                    <div class="place_enfant">
+                        <div class="entete_place">
+                            <img class="preview_ticket" src="images/ticket_festinmotion.png" alt="Ticket Fest'In Motion" />
+                            <p>Fest'In Motion - Entrée Enfant (-10 ans)</p>
+                        </div>
+                        <div class="reglage_quantite">
+                            <p><button id="moins1"><img src="images/icon_moins.png" alt="Icône moins" /></button><button id="plus1"><img src="images/icon_plus.png" alt="Icône plus" /></button></p>
+                            <p class="quantite"><strong>Quantité :</strong> <span id="quantite1">2</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="place_adulte">
+                        <div class="entete_place">
+                            <img class="preview_ticket" src="images/ticket_festinmotion.png" alt="Ticket Fest'In Motion" />
+                            <p>Fest'In Motion - Entrée Adulte</p>
+                        </div>
+                        <div class="reglage_quantite">
+                            <p><button id="moins2"><img src="images/icon_moins.png" alt="Icône moins" /></button><button id="plus2"><img src="images/icon_plus.png" alt="Icône plus" /></button></p>
+                            <p class="quantite"><strong>Quantité :</strong> <span id="quantite2">1</span></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Ligne verticale -->
+                
+                <div class="panier_resume">
+                    <h3 class="titre_panier_vue">Votre panier</h3>
+                    
+                    <!-- Ligne horizontale -->
+                    
+                    <p>Entrée Enfant ............ <span id="quantite1">2</span></p>
+                    <p>Entrée Adulte ............ <span id="quantite2">1</span></p>
+                    
+                    <div class="total_paiement">
+                        <h4>Total :</h4>
+                        <span id="total">45</span>€00
+                    </div>
+                    <!-- Ligne horizontale -->
+                    
+                    <a id="lien_paiement" href="https://www.google.fr/">Payer</a>
+                    
+                </div>
+            </section>
         </div>
         
         <footer>
