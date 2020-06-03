@@ -785,10 +785,6 @@ footer #reglements a{
     font-size: 20px; 
 }
 
-.contenu_galeries{
-    
-}
-
 .titre_categorie{
     text-transform: uppercase;
     color:#EF476F;
@@ -821,7 +817,6 @@ footer #reglements a{
 }
 
 .videos{
-    padding-left: 60px;
     margin-left: 50px; 
 }
 
