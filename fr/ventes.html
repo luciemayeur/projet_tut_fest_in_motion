@@ -1,27 +1,28 @@
-<!-- É È -->
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
-        <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Ciném, Dessin" />
+        <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <title>FEST'IN MOTION - Conditions générales de vente</title>
-        <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+        <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/style.css" />
         
         <link href="http://fr.allfont.net/allfont.css?fonts=dosis" rel="stylesheet" type="text/css" />
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+        
+        <script src="../scripts/script.js" type="text/javascript"></script>
     </head>
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             <nav id="menu">
                 <a href="evenement.html">Événement</a>
                 <a href="inscription.html">Inscription</a>
@@ -33,27 +34,27 @@
             </nav>
           
             <div id="reseaux_sociaux">
-                <a href="https://www.facebook.com/FestIn-Motion-100813134998756/?modal=admin_todo_tour"><img src="images/icon_facebook.png" alt="Lien Facebook"></a>
-                <a href="https://www.instagram.com/festinmotion/"><img src="images/icon_instagram.png" alt="Lien Instagram"></a>
-                <a href="https://twitter.com/FestInMotion"><img src="images/icon_twitter.png" alt="Lien Twitter"></a>
-                <a href="https://www.youtube.com/channel/UC1ThYZMw6srQtw7cKzci-Uw"><img src="images/icon_youtube.png" alt="Lien Youtube"></a>
-                <a href="panier.html"><img src="images/icon_panier.png" alt="Lien Panier"></a>
+                <a href="https://www.facebook.com/FestIn-Motion-100813134998756/?modal=admin_todo_tour"><img src="../images/icon_facebook.png" alt="Lien Facebook"></a>
+                <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
+                <a href="https://twitter.com/FestInMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
+                <a href="https://www.youtube.com/channel/UC1ThYZMw6srQtw7cKzci-Uw"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
+                <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
             </div>
             
             <div id="langues">
-                <button id="french" class="active">FR</button>
-                <button id="english">EN</button>
+                <button id="french" class="active" onclick="switchFR();">FR</button>
+                <button id="english" onclick="switchEN();">EN</button>
             </div>
         </header>
         
         <section id="banniere">
             <h1 id="titre">Fest'In Motion</h1>
             <div id="photos_banniere">
-                <img src="images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
-                <img src="images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
-                <img src="images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
+                <img src="../images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
+                <img src="../images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
+                <img src="../images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Conditions générales de vente</span>
+            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Conditions générales de vente</span>
         </section>
         
         <div id="corps_page">
@@ -117,7 +118,7 @@
                     <h3 class="titre_article_vente">Article 3 - Commandes</h3>
                     <p>
                         Vous pouvez passer commande :<br/>
-                        <span class="possibilite_vente item_list">Sur Internet : <a href="https://www.fest-in-motion.fr/inscription.html">www.fest-in-motion.fr/inscription/</a></span><br/>
+                        <span class="possibilite_vente item_list">Sur Internet : <a href="inscription.html">www.fest-in-motion.fr/fr/inscription/</a></span><br/>
                         <span class="possibilite_vente item_list">Par téléphone au tarif de 0.10 € TTC / min du lundi au samedi de 07h00 à 21h.</span>
                     </p>
                     <p>
@@ -130,7 +131,7 @@
                 <div id="vente_article4">
                     <h3 class="titre_article_vente">Article 4 - Validation de votre commande</h3>
                     <p>
-                        Toute commande figurant sur le site Internet <a href="https://www.fest-in-motion.fr/index.html">www.fest-in-motion.fr</a> suppose l'adhésion aux présentes Conditions Générales. Toute confirmation de commande entraîne votre adhésion pleine et entière aux présentes conditions générales de vente, sans exception ni réserve.  
+                        Toute commande figurant sur le site Internet <a href="index.html">www.fest-in-motion.fr/fr/</a> suppose l'adhésion aux présentes Conditions Générales. Toute confirmation de commande entraîne votre adhésion pleine et entière aux présentes conditions générales de vente, sans exception ni réserve.  
                     </p>
                     <p>
                         L'ensemble des données fournies et la confirmation enregistrée vaudront preuve de la transaction.
@@ -190,11 +191,11 @@
                 <div id="vente_article7">
                     <h3 class="titre_article_vente">Article 7 - Disponibilité</h3>
                     <p>
-                        Nos produits sont proposés tant qu'ils sont visibles sur le site <a href="https://www.fest-in-motion.fr/index.html">www.fest-in-motion.fr</a> et dans la limite des stocks disponibles. Pour les produits non stockés, nos offres sont valables sous réserve de disponibilité chez nos fournisseurs.<br/>
+                        Nos produits sont proposés tant qu'ils sont visibles sur le site <a href="index.html">www.fest-in-motion.fr/fr/</a> et dans la limite des stocks disponibles. Pour les produits non stockés, nos offres sont valables sous réserve de disponibilité chez nos fournisseurs.<br/>
                         En cas d'indisponibilité de produit après passation de votre commande, nous vous en informerons par mail. Votre commande sera automatiquement annulée et aucun débit bancaire ne sera effectué.
                     </p>
                     <p>
-                        En outre, le site Internet <a href="https://www.fest-in-motion.fr/index.html">www.fest-in-motion.fr</a> n'a pas vocation à vendre ses produits en quantités importantes. Par conséquent la société publique Fest'In Motion se réserve le droit de refuser les commandes de 8 articles identiques.
+                        En outre, le site Internet <a href="index.html">www.fest-in-motion.fr/fr/</a> n'a pas vocation à vendre ses produits en quantités importantes. Par conséquent la société publique Fest'In Motion se réserve le droit de refuser les commandes de 8 articles identiques.
                     </p>
                 </div>
                 <div id="vente_article8">
@@ -248,7 +249,7 @@
                 <div id="vente_article12">
                     <h3 class="titre_article_vente">Article 12 - Propriété intellectuelle</h3>
                     <p>
-                        Tous les éléments du site <a href="https://www.fest-in-motion.fr/index.html">www.fest-in-motion.fr</a> sont et restent la propriété intellectuelle et exclusive de la société publique Fest'In Motion. Nul n'est autorisé à reproduire, exploiter, rediffuser, ou utiliser à quelque titre que ce soit, même partiellement, des éléments du site qu'ils soient logiciels, visuels ou sonores. Tout lien simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société publique Fest'In Motion.
+                        Tous les éléments du site <a href="index.html">www.fest-in-motion.fr/fr/</a> sont et restent la propriété intellectuelle et exclusive de la société publique Fest'In Motion. Nul n'est autorisé à reproduire, exploiter, rediffuser, ou utiliser à quelque titre que ce soit, même partiellement, des éléments du site qu'ils soient logiciels, visuels ou sonores. Tout lien simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société publique Fest'In Motion.
                     </p>
                 </div>
                 <div id="vente_article13">
@@ -315,7 +316,7 @@
             <div id="bottom_footer">
                 <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
                 <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
             </div>
