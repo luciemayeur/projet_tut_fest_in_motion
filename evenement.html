@@ -47,22 +47,23 @@
         </header>
         
         <section id="banniere">
-            <h1 id="titre">Fest'In Motion</h1>
-            <div id="photos_baniere">
+            <div id="photos_banniere">
                 <img src="images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
                 <img src="images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
                 <img src="images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
             </div>
+            
+            <h1 id="titre">Fest'In Motion</h1>
             <span id="chemin" class="item_page"><a href="index.html"><img src="images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Événement</span>
         </section>
         
         <div id="corps_page">
-            <section class="item_page titre_entete">
+            <section class="titre_entete item_page">
                 <h2 id="titre_evenement">Événement</h2>
-                <p>Retrouvez ci-dessous la présentation de notre festival.</p>
+                <p id="texte_p_evenement">Retrouvez ci-dessous la présentation de notre festival.</p>
             </section>
             
-            <!-- Ligne horizontale -->
+            <div id="trait"><hr></div><!-- Ligne horizontale -->
             
             <section class="item_page contenu_evenement">
                 <div class="item_page entete_evenement">
@@ -110,12 +111,13 @@
                         </p>
                         
                         <div id="prix_tarifs">
-                            <span id="prix_adulte"><span>15</span>€00 / adulte</span>
+                           
+                            <div id="prix_adulte"><span>15</span>€00 / adulte</div>
 
-                            <span id="prix_enfant"><span>10</span>€00 / enfant<sup>*</sup></span>
-
-                            <span id="explication_asterisque"><sup>*</sup>Correspond aux enfants de moins de 10 ans</span>
+                            <div id="prix_enfant"><span>10</span>€00 / enfant<sup>*</sup></div>
                         </div>
+                            <span id="explication_asterisque" class="asterisque"><sup>*</sup>Correspond aux enfants de moins de 10 ans</span>
+                        
                         
                         <a href="inscription.html" class="lien_inscription">Je vous rejoins</a>
                     </div>
