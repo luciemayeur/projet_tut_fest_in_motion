@@ -1,13 +1,14 @@
+<!-- É È À -->
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
-        <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
+        <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Ciném, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <title>FEST'IN MOTION - Informations</title>
-        <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
+        <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
         <link rel="stylesheet" type="text/css" href="../styles/style.css" />
@@ -16,8 +17,6 @@
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-        
-        <script src="../scripts/script.js" type="text/javascript"></script>
     </head>
     
     <body>
@@ -42,38 +41,37 @@
             </div>
             
             <div id="langues">
-                <button id="french" class="active" onclick="switchFR();">FR</button>
-                <button id="english" onclick="switchEN();">EN</button>
+                <button id="french" class="active">FR</button>
+                <button id="english">EN</button>
             </div>
         </header>
         
         <section id="banniere">
-            <h1 id="titre">Fest'In Motion</h1>
             <div id="photos_banniere">
                 <img src="../images/citadelle1.jpg" alt="Image de la Citadelle 1" id="citadelle1" class="photo_baniere" />
                 <img src="../images/citadelle2.jpg" alt="Image de la Citadelle 1" id="citadelle2" class="photo_baniere" />
                 <img src="../images/citadelle3.jpg" alt="Image de la Citadelle 1" id="citadelle3" class="photo_baniere" />
             </div>
+            <h1 id="titre">Fest'In Motion</h1>
             <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Informations</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
                 <h2 id="titre_informations">Informations</h2>
-                <p>Retrouvez ci-dessous toutes les informations (dates, horaires, stands, ...) à propos de notre festival.</p>
+                <p id="texte_p_informations">Retrouvez ci-dessous toutes les informations (dates, horaires, stands, ...) à propos de notre festival.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
             <section class="item_page contenu_informations">
-                <h3 class="titre_contenu">Fest'In Motion</h3>
-                <span class="sous_titre_contenu">Festival International du film d'animation amateur 2020</span>
-                <p>
+                <h3 class="titre_contenu">Festival International du film d'animation amateur 2020</h3>
+                <p class="sous_titre_contenu">
                     Le Fest'In Motion est un festival, qui cherche à vous proposer des films d'animation au fort potentiel du cinéma.<br/>
                     De l'animation 3D jusqu'au stop motion, l'objectif est de vous faire découvrir une autre facette du cinéma d'animation.
                 </p>
-                
+        <div id=couleurs>        
                 <div class="informations_explications item_page">
                     <div class="texte_explications">
                         <h3 class="titre_explications">
@@ -96,7 +94,7 @@
                 
                 <div class="informations_programme item_page">
                     <div class="img_programme">
-                        <img src="images/citadelle2.jpg" alt="Photo citadelle" />
+                        <img src="../images/citadelle2.jpg" alt="Photo citadelle" />
                     </div>
                     <div class="texte_programme">
                         <h3 class="titre_programme">
@@ -122,7 +120,7 @@
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Les inscriptions pour assister au festival se font sur notre site officiel, la page <a class="lien_inscription" href="inscription.html">Inscription</a>
+                            Les inscriptions pour assister au festival se font sur notre site officiel, la page <a class="lien_inscription1" href="inscription.html">Inscription.</a>
                         </p>
                         <p>
                             Vous aurez aussi la possibilité de rencontrer des professionnels afin de pouvoir échanger avec eux, les questionner sur leur parcours, les demander des conseils, ...<br/>
@@ -135,11 +133,11 @@
                 </div>
                 
                 <div class="informations_exposants item_page">
-                    <div class="img_inscription">
+                    <div class="img_exposants">
                         <img src="../images/citadelle3.jpg" alt="Photo citadelle" />
                     </div>
-                    <div class="texte_inscription">
-                        <h3 class="titre_inscription">
+                    <div class="texte_exposants">
+                        <h3 class="titre_exposants">
                             Fest'In Motion,<br/>
                             qui y vient ?
                         </h3>
@@ -153,14 +151,14 @@
                         </p>
                     </div>
                 </div>
-                
+      </div>          
                 <div class="informations_photos item_page">
                     <div>
                         <h3 class="titre_photos">Fest'In Motion en photo</h3>
                     </div>
                     <!-- Ligne horizontale -->
                     <div class="img_photos">
-                        <img class="informations_img_photos" src="../images/citadelle1.jpg" alt="Photo Fest'In Motion 1" />
+                        <img  id="photos1" class="informations_img_photos" src="../images/citadelle1.jpg" alt="Photo Fest'In Motion 1" />
                         <img class="informations_img_photos" src="../images/citadelle2.jpg" alt="Photo Fest'In Motion 2" />
                         <img class="informations_img_photos" src="../images/citadelle3.jpg" alt="Photo Fest'In Motion 3" />
                     </div>

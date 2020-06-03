@@ -859,10 +859,255 @@ footer #reglements a{
     font-weight: bold;
 }
 
-/*PANIER*/
+/*INFORMATIONS*/
+
+.contenu_informations{
+    display: block;
+}
+
+#titre_informations{
+   font-size: 50px;
+    margin-left: 350px;
+}
+
+#texte_p_informations{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 370px;
+    font-size: 20px;   
+}
+
+.titre_contenu{
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sous_titre_contenu{
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.informations_explications{
+    display: flex;
+    background-color: rgba(132, 239, 71,0.35);
+    margin-top: 50px;
+}
+
+.informations_programme{
+    display: flex;
+    background-color:rgba(62, 72, 214,0.35);
+    margin-top: 50px;
+}
+
+.informations_inscription{
+    display: flex;
+     background-color:rgba(239, 71, 111,0.35);
+    margin-top: 50px;
+} 
+
+.informations_exposants{
+    display: flex;
+    background-color:rgba(214, 148, 62,0.35);
+    margin-top: 50px;
+} 
+
+.informations_photos{
+    display: block;
+    background-color:rgba(233, 50, 50,0.35);
+    margin-top: 50px;
+}
+.img_photos{
+   display: flex; 
+    align-items: center;
+    align-content: center;
+}
+
+.img_explications img{
+  width: 750px;
+}
+
+.img_programme img{
+  width: 750px; 
+  height: 500px;
+}
+
+.img_inscription img{
+  width: 750px;  
+} 
+
+.img_exposants img{
+   width: 750px; 
+} 
+
+#couleurs{
+    display:block;
+    margin: 100px;
+    margin-top: 50px;
+    
+}
+
+.informations_img_photos{
+    width: 25%;
+    margin: 50px;
+}
+
+.titre_explications{
+    text-align:left;
+    font-size: 40px;
+    margin: 30px;
+    margin-top: 95px;
+    }
+
+.titre_programme{
+    text-align:left;
+    font-size: 40px;
+    margin: 30px;
+    
+    }
+
+.titre_inscription{
+    text-align:left;
+    font-size: 40px;
+    margin: 30px;
+    margin-top: 80px;
+    }
+
+.titre_exposants{
+    text-align:left;
+    font-size: 40px;
+    margin: 30px;
+    margin-top: 100px
+    }
+
+.texte_explications{
+    width: 1500px;
+}
+
+.texte_explications p{
+   text-align: justify;
+    font-size: 25px; 
+    margin: 30px;
+}
+
+.texte_programme p{
+   text-align: justify;
+    font-size: 25px; 
+    margin: 30px;
+}
+
+.texte_inscription p{
+   text-align: justify;
+    font-size: 25px; 
+    margin: 30px;
+}
+
+.texte_exposants p{
+   text-align: justify;
+    font-size: 25px; 
+    margin: 30px;
+}
+
+.lien_inscription1{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.titre_photos{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#photos1{
+    margin-left: 110px;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
 
 
 /*
