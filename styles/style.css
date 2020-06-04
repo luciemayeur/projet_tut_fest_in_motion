@@ -213,6 +213,8 @@ footer #reglements a{
     margin: 0 4px;
 }
 
+/* Banière */
+
 #banniere{
     position: relative; 
     height: 300px;
@@ -220,7 +222,7 @@ footer #reglements a{
     display : flex;    
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #000000;
 }
 
 
@@ -234,11 +236,11 @@ footer #reglements a{
 #banniere #titre{
     line-height: 1;
     margin-bottom: 10px;
-    position:absolute;
-    top:60px; 
-    width:600px; 
-    height:400px; 
-    z-index:2;
+    position: absolute;
+    top: 60px; 
+    width: 600px; 
+    height: 400px; 
+    z-index: 2;
     color: #EF476F;
     text-transform: uppercase;
     text-align: center;
@@ -248,20 +250,24 @@ footer #reglements a{
 
 #photos_banniere img{
     width: 33%;
-    height:auto;
+    height: auto;
 }
+
+/*********/
+/* INDEX */
+/*********/
 
 #corps_page{
     background-color: rgba(12, 59, 76,0.5);
     padding: 50px;
-    color:white;
+    color: #FFFFFF;
 }
 
 #entete{
-    background-color:#EF476F;
+    background-color: #EF476F;
     text-align: center;
-    border-radius: 50px;
-    color: white;
+    border-radius: 100px;
+    color: #FFFFFF;
     padding: 40px;
     margin-bottom: 100px;
 }
@@ -277,7 +283,7 @@ footer #reglements a{
 
 #promo_video{
     background-color: rgba(239, 71, 111, 0.35);
-    color: white;
+    color: #FFFFFF;
     display: flex;
 }
 
@@ -286,7 +292,7 @@ footer #reglements a{
 }
 
 #texte_video{
-    margin:30px;
+    margin: 30px;
     padding-top: 110px;
 }
 
@@ -299,11 +305,13 @@ footer #reglements a{
     font-size: 20px;
 }
 
+/* GALERIE */
+
 #preview_galeries{
     background-color: #118AB2;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     margin-top: 40px;
 }
 
@@ -313,8 +321,10 @@ footer #reglements a{
 }
 
 #preview_photos{
+    width: 1600px;
     display: flex;
-	margin-left: 8%;
+    justify-content: space-around;
+	margin: auto;
  	flex-basis: 25%;
 	text-align: center;
 	flex-wrap: wrap;
@@ -324,19 +334,22 @@ footer #reglements a{
     width: 350px;
     text-align: center;
 	margin: 4px;
-    margin-bottom:15px;
-	opacity: 50%;	
+    margin-bottom: 15px;
+	opacity: 50%;
+    transition: 0.3s;
 }
 
 #preview_photos img:hover{
-    opacity:1;
+    opacity: 1;
 }
 
+/* RESERVATION */
+
 #reservation{
-    background-color:#EF476F;
+    background-color: #EF476F;
     text-align: center;
     border-radius: 80px;
-    color: white;
+    color: #FFFFFF;
     padding: 40px;
     margin-bottom: 100px;
     margin-top: 50px;
@@ -361,9 +374,9 @@ footer #reglements a{
     background-color: #41D882;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding:15px;
+    padding: 15px;
     font-weight: bold;
     font-size: 35px;
     margin-left: 150px;
@@ -386,7 +399,7 @@ footer #reglements a{
 }
 
 #prix_adulte span{
-    font-size:40px;
+    font-size: 40px;
 }
 
 #prix_enfant{
@@ -394,20 +407,23 @@ footer #reglements a{
 }
 
 #prix_enfant span{
-    font-size:40px;
+    font-size: 40px;
 }
 
 #explication_asterisque{
     font-size: 15px;
+    position: relative;
+    top: 35px;
+    left: 250px;
 }
+
+/* PARTENAIRES */
 
 #partenaires{
     background-color:rgba(0,0,0,0.5);
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding: 30px;
-    padding-bottom:250px;
-    
+    padding: 30px;    
 }
 
 #titre_partenaires{
@@ -419,99 +435,126 @@ footer #reglements a{
     font-size: 20px;
 }
 
-#images_partenaires img{
-    position:absolute;
-    width:250px;
-    margin-left: 40px;
+#images_partenaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-#partenaire1{
-    left: 130px;
-    top:3310px;
+#images_partenaires img{
+    width: 250px;
+    margin: 0 20px;
 }
 
-#partenaire2{
-    left: 450px; 
-    top: 3280px;
-}
-
-#partenaire3{
-    left: 750px; 
-    top:3320px;
-}
-
-#partenaire4{
-    left: 1050px; 
-    top:3350px; 
-}
-
-#partenaire5{
-    left: 1350px; 
-    top:3300px;
-}
-
-/*PARTENAIRES*/
+/* CHEMIN */
 
 #chemin{
-    color:white;
+    color: #FFFFFF;
     font-size: 25px;
     line-height: 1;
     margin-bottom: 10px;
-    position:absolute;
-    top:240px; 
+    position: absolute;
+    top: 240px; 
     left: 200px;
-    width:600px; 
-    height:400px; 
-    z-index:2;
+    width: 600px; 
+    height: 400px; 
+    z-index: 2;
 }
 
 #chemin a{
-    text-decoration:none;
-    color: white;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #icon_accueil{
-    width: 8%;
+    width: 39px;
+    position: relative;
+    top: 5px;
 }
+
+/**************/
+/* PARTENAIRE */
+/**************/
 
 #titre_partenairesp{
     font-size: 50px;
-    margin-left: 95px;
+    margin-left: 350px;
 }
 
 #texte_p_partenaires{
     padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-left: 370px;
     font-size: 20px;
     
 }
 
 .partenaire{
-    background-color: #AABAC0;
-    width: 500px;
-    height: 500px;
-    margin: 15px;
+    background: linear-gradient(#AABAC0, #808080);
+    width: 800px;
+    height: 600px;
+    margin: 20px;
+    position: relative;
 }
 
 .img_partenaire{
-    width:500px;
-    height: auto;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.partenaire .explication_partenaire{
+    background-color: rgba(32, 30, 30, 0.38);
+    width: 700px;
+    height: 470px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.partenaire:hover .explication_partenaire{
+    opacity: 1;
+}
+
+.partenaire .explication_partenaire .nom_partenaire{
+    font-size: 38px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.partenaire .explication_partenaire .infos_partenaire{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 5px;
+    line-height: 25px;
+}
 
 #corps_page .item_pagep{
-    display: flex;
-	margin-left: 15%;
- 	flex-basis: 25%;
+    margin: auto;
 	text-align: center;
 	flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    color: white;
+ 	flex-basis: 25%;
+    color: #FFFFFF;
 }
 
-/*EVENEMENT*/
+/*************/
+/* EVENEMENT */
+/*************/
 
 #titre_evenement{
     font-size: 50px;
@@ -520,7 +563,7 @@ footer #reglements a{
 
 #texte_p_evenement{
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-left: 370px;
     font-size: 20px;
     
@@ -531,7 +574,7 @@ footer #reglements a{
 }
 
 .entete_evenement h2{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20px;
 }
 
@@ -544,10 +587,12 @@ footer #reglements a{
 }
 .entete_evenement a{
     text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .infos_evenement{
-    display:block;
+    display: block;
     margin: 100px;
     margin-top: 50px;
 }
@@ -583,20 +628,20 @@ footer #reglements a{
 }
 
 .texte_presentation h3{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     }
 
 .texte_professionels h3{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     margin-top: 80px;
     }
 
 .texte_souvenir h3{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     margin-top: 100px
@@ -627,24 +672,31 @@ footer #reglements a{
     margin: 30px;
 }
 
+.citation{
+    font-style: italic;
+}
+
 .auteur{
     margin-left: 450px;
     text-align: right;
     font-size: 25px;
 }
 .tarifs{
-     background-color:#EF476F;
+    background-color: #EF476F;
     text-align: center;
     border-radius: 80px;
-    color: white;
+    color: #FFFFFF;
     padding: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     margin-top: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tarifs h3{
     font-size: 50px;
-    padding:30px;
+    padding: 30px;
 }
 
 .tarifs p{
@@ -658,24 +710,27 @@ footer #reglements a{
 }
 
 .lien_inscription{
-   background-color: #41D882;
+    background-color: #41D882;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding:15px;
+    padding: 15px;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 40px;
     align-items: center; 
 }
 
-.asterisque{
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 500px;    
+.tarifs #explication_asterisque{
+    position: relative;
+    top: 0;
+    left: 500px;    
 }
 
-/*CONTACT*/
+/***********/
+/* CONTACT */
+/***********/
+
 #titre_contact{
     font-size: 50px;
     margin-left: 350px;
@@ -683,25 +738,27 @@ footer #reglements a{
 
 .entete_contact p{
    padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-left: 370px;
     font-size: 20px; 
 }
 
 .contenu_contact{
     display: flex;
+    margin-top: 40px;
 }
 
 #infos_contact{
     display: block;
     width: 600px;
-    border-right: 3px solid white;
+    border-right: 3px solid #FFFFFF;
     padding: 100px;
 }
 
 .logo{
     width: 50%;
     padding-bottom: 60px;
+    margin-left: 50px;
 }
 
 .element_contact{
@@ -709,9 +766,17 @@ footer #reglements a{
     padding-bottom: 40px;
 }
 
+#adresse_contact{
+    margin-left: 20px;
+}
+
+#adresse_contact strong{
+    margin-left: -20px;
+}
+
 .element_contact a{
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 #formulaire_contact{
@@ -720,48 +785,50 @@ footer #reglements a{
 
 .element_formulaire{
     font-size: 20px;
-    padding-top:15px;
+    padding-top: 15px;
 }
 
 #civilite{
     margin-left: 50px;  
-    margin-top:10px;
-    padding:10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 #prenom{
     margin-left: 50px;
-    margin-top:10px;
-    padding:10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 #nom{
     margin-left: 50px;
-    margin-top:10px;
-    padding:10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 #mail{
     margin-left: 50px; 
-    margin-top:10px;
-    padding:10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 #sujet{
     margin-left: 50px; 
-    margin-top:10px;
-    padding:10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 #message{
     margin-left: 50px;
-    margin-top:10px;
+    margin-top: 10px;
     width: 700px;
+    max-width: 1000px;
     height: 300px;
+    min-height: 300px;
 }
 
 #envoie{
    background-color: #41D882;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding-left:15px;
+    padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -771,7 +838,9 @@ footer #reglements a{
     font-size: 25px;
 }
 
-/*GALERIES*/
+/************/
+/* GALERIES */
+/************/
 
 #titre_galeries{
     font-size: 50px;
@@ -780,24 +849,26 @@ footer #reglements a{
 
 #texte_p_galeries{
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-left: 370px;
     font-size: 20px; 
 }
 
 .titre_categorie{
     text-transform: uppercase;
-    color:#EF476F;
+    color: #EF476F;
     font-size: 40px;
     margin-bottom: 50px;
-    margin-top:50px;
-    margin-left:250px;
-    font-family: "Dosis";
+    margin-top: 50px;
+    margin-left: 250px;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-style: italic;
 }
 
 .contenu_galeries{
-    color: white;
-    padding-bottom:20px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
     margin-top: 40px;
 }
 
@@ -807,17 +878,22 @@ footer #reglements a{
  	flex-basis: 25%;
 	text-align: center;
 	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categorie_communique .ensemble_categorie{
+    justify-content: flex-start;
+    position: relative;
 }
 
 .ensemble_categorie img{
     width: 450px;
     text-align: center;
 	margin: 4px;
-    margin-bottom:15px;	
+    margin-bottom: 15px;	
 }
 
 .videos{
-    padding-left: 60px;
     margin-left: 50px; 
 }
 
@@ -830,9 +906,9 @@ footer #reglements a{
   background-color: #41D882;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding-left:40px;
+    padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -847,15 +923,19 @@ footer #reglements a{
 
 .titre_communique{
     position: absolute;
-    margin-left: 130px;
-    margin-top: 200px;
-    color:#EF476F;
-    font-family: "Dosis";
-    font-size: 50px;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    color: #EF476F;
+    font-family: "Noto Sans";
+    font-size: 32px;
     font-weight: bold;
+    font-style: italic;
 }
 
-/*INFORMATIONS*/
+/****************/
+/* INFORMATIONS */
+/****************/
 
 .contenu_informations{
     display: block;
@@ -868,13 +948,13 @@ footer #reglements a{
 
 #texte_p_informations{
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-left: 370px;
     font-size: 20px;   
 }
 
 .titre_contenu{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20px;
     text-align: center;
 }
@@ -893,52 +973,52 @@ footer #reglements a{
 
 .informations_programme{
     display: flex;
-    background-color:rgba(62, 72, 214,0.35);
+    background-color: rgba(62, 72, 214,0.35);
     margin-top: 50px;
 }
 
 .informations_inscription{
     display: flex;
-     background-color:rgba(239, 71, 111,0.35);
+     background-color: rgba(239, 71, 111,0.35);
     margin-top: 50px;
 } 
 
 .informations_exposants{
     display: flex;
-    background-color:rgba(214, 148, 62,0.35);
+    background-color: rgba(214, 148, 62,0.35);
     margin-top: 50px;
 } 
 
 .informations_photos{
     display: block;
-    background-color:rgba(233, 50, 50,0.35);
+    background-color: rgba(233, 50, 50,0.35);
     margin-top: 50px;
 }
 .img_photos{
-   display: flex; 
+    display: flex; 
     align-items: center;
     align-content: center;
 }
 
 .img_explications img{
-  width: 750px;
+    width: 750px;
 }
 
 .img_programme img{
-  width: 750px; 
-  height: 500px;
+    width: 750px; 
+    height: 500px;
 }
 
 .img_inscription img{
-  width: 750px;  
+    width: 750px;  
 } 
 
 .img_exposants img{
-   width: 750px; 
+    width: 750px; 
 } 
 
 #couleurs{
-    display:block;
+    display: block;
     margin: 100px;
     margin-top: 50px;
     
@@ -950,28 +1030,28 @@ footer #reglements a{
 }
 
 .titre_explications{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     margin-top: 95px;
     }
 
 .titre_programme{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     
     }
 
 .titre_inscription{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     margin-top: 80px;
     }
 
 .titre_exposants{
-    text-align:left;
+    text-align: left;
     font-size: 40px;
     margin: 30px;
     margin-top: 100px
@@ -1007,7 +1087,7 @@ footer #reglements a{
 
 .lien_inscription1{
     text-decoration: none;
-    color:white;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
