@@ -2106,6 +2106,38 @@ th:last-child{
     /* GALERIES */ 
     /************/
     
+    #corps_page .titre_entete #titre_galeries, #corps_page .titre_entete #texte_p_galeries{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_galeries .ensemble_categorie{
+        margin: 0;
+    }
+    
+    #corps_page .contenu_galeries .titre_categorie{
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_galeries .categorie_communique .ensemble_categorie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+    
+    #corps_page .contenu_galeries .categorie_communique .ensemble_categorie .titre_communique{
+        left: 50%;
+    }
+    
+    #corps_page .contenu_galeries .categorie_communique .ensemble_categorie #lien_telechargement_presse{
+        margin: 0;
+        bottom: 0;
+    }
+    
+    
     /**********/
     /* F.A.Q. */ 
     /**********/
