@@ -253,7 +253,9 @@ footer #reglements a{
     height: auto;
 }
 
+/*********/
 /* INDEX */
+/*********/
 
 #corps_page{
     background-color: rgba(12, 59, 76,0.5);
@@ -467,7 +469,9 @@ footer #reglements a{
 }
 
 #icon_accueil{
-    width: 8%;
+    width: 39px;
+    position: relative;
+    top: 5px;
 }
 
 #titre_partenairesp{
@@ -506,7 +510,9 @@ footer #reglements a{
     color: #FFFFFF;
 }
 
-/*EVENEMENT*/
+/*************/
+/* EVENEMENT */
+/*************/
 
 #titre_evenement{
     font-size: 50px;
@@ -526,7 +532,7 @@ footer #reglements a{
 }
 
 .entete_evenement h2{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20px;
 }
 
@@ -539,6 +545,8 @@ footer #reglements a{
 }
 .entete_evenement a{
     text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .infos_evenement{
@@ -622,19 +630,26 @@ footer #reglements a{
     margin: 30px;
 }
 
+.citation{
+    font-style: italic;
+}
+
 .auteur{
     margin-left: 450px;
     text-align: right;
     font-size: 25px;
 }
 .tarifs{
-     background-color: #EF476F;
+    background-color: #EF476F;
     text-align: center;
     border-radius: 80px;
     color: #FFFFFF;
     padding: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     margin-top: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tarifs h3{
@@ -653,21 +668,21 @@ footer #reglements a{
 }
 
 .lien_inscription{
-   background-color: #41D882;
+    background-color: #41D882;
     border-radius: 50px;
     text-decoration: none;
     color: #FFFFFF;
     text-align: center;
     padding: 15px;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 40px;
     align-items: center; 
 }
 
-.asterisque{
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 500px;    
+.tarifs #explication_asterisque{
+    position: relative;
+    top: 0;
+    left: 500px;    
 }
 
 /*CONTACT*/
