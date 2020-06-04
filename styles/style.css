@@ -486,7 +486,7 @@ footer #reglements a{
 #texte_p_partenaires{
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 100px;
+    padding-left: 150px;
     font-size: 20px;
     
 }
@@ -541,7 +541,6 @@ footer #reglements a{
     line-height: 25px;
 }
 
-
 #corps_page .item_pagep{
     margin: auto;
 	text-align: center;
@@ -551,6 +550,13 @@ footer #reglements a{
     align-items: center;
  	flex-basis: 25%;
     color: #FFFFFF;
+}
+
+#corps_page .entete_partenaire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 200px;
 }
 
 /*************/
