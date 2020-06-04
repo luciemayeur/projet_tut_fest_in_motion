@@ -1021,42 +1021,239 @@ footer #reglements a{
     margin-left: 110px;
 }
 
+/*MENTIONS LEGALES*/
+
+#titre_mentions_legales{
+    font-size: 50px;
+    margin-left: 350px;
+}
+
+#sous-titre-mention{
+   padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 370px;
+    font-size: 20px;  
+}
+
+.contenu_mentions_legales{
+    background-color: #E7E6E8;
+    color: black;
+    padding:50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+#infos_legales p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#presentation_principe p{
+    font-size: 20px;
+    text-align: justify; 
+}
+
+#hypertextes_cookies p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_personnelles p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#accessibilite p{
+   font-size: 20px;
+    text-align: justify; 
+}
+
+#propriete_intellectuelle p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#protection_bdd{
+   font-size: 20px;
+    text-align: justify;  
+}
+
+#paragraphe_gras {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.contenu_mentions_legales h3{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#mention_loi{
+    font-size: 30px;
+}
+
+/*CONFIDENTIALITE*/
+
+#titre_confidentialite{
+     font-size: 50px;
+    margin-left: 350px;
+}
+
+#sous_titre_confidentialite{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 370px;
+    font-size: 20px;  
+}
+
+.contenu_confidentialite {
+    background-color: #E7E6E8;
+    color: black;
+    padding:50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+#donnees_collectees p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_recoltees p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_raison p{
+    font-size: 20px;
+    text-align: justify; 
+}
+
+#donnees_destination p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_protection p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_droits p{
+   font-size: 20px;
+    text-align: justify; 
+}
+
+#donnees_conservation p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_transfert p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#donnees_modification p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contenu_confidentialite h3{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*COOKIES*/
+#titre_cookies{
+  
+    font-size: 50px;
+    margin-left: 350px;  
+}
+
+#sous_titres_cookies{
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 370px;
+    font-size: 20px;
+}   
+
+.contenu_cookies {
+    background-color: #E7E6E8;
+    color: black;
+    padding:50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
 
 
+#infos_cookies p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#utilisation_cookies p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#parametrage_cookies p{
+    font-size: 20px;
+    text-align: justify; 
+}
+
+#desactivation_cookies p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contenu_cookies h3{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contenu_cookies h4{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+/*VENTE*/
+#titre_conditions_vente{
+  
+    font-size: 50px;
+    margin-left: 350px;  
+}  
+
+#contenu_conditions_vente {
+    background-color: #E7E6E8;
+    color: black;
+    padding:50px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
 
 
+#contenu_conditions_vente p{
+    font-size: 20px;
+    text-align: justify;
+}
 
 
+#contenu_conditions_vente h3{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#presentation_agence p{
+    padding-bottom: 20px;
+}
 
 
 
