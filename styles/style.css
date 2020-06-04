@@ -2142,6 +2142,13 @@ th:last-child{
     /* F.A.Q. */ 
     /**********/
     
+    #corps_page .titre_entete #titre_faq, #corps_page .titre_entete #texte_p_faq{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    
     /***********/
     /* CONTACT */ 
     /***********/
@@ -2150,16 +2157,42 @@ th:last-child{
     /* MENTIONS LEGALES */ 
     /********************/
     
+    #corps_page .titre_entete #titre_mentions_legales, #corps_page .titre_entete #sous-titre-mention{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    
     /*******************/
     /* CONFIDENTIALITE */ 
     /*******************/
+    
+    #corps_page .titre_entete #titre_confidentialite, #corps_page .titre_entete #sous_titre_confidentialite{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
     
     /***********/
     /* COOKIES */ 
     /***********/
     
+    #corps_page .titre_entete #titre_cookies, #corps_page .titre_entete #sous_titres_cookies{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    
     /**********/
     /* VENTES */ 
     /**********/
     
+    #corps_page .titre_entete #titre_conditions_vente{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
 }
