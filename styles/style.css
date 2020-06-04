@@ -20,6 +20,18 @@ header{
     justify-content: space-around;
 }
 
+header #menu_deroulant{
+    width: 82%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button#icon_menu_ouvert, header button#icon_menu_ferme{
+    display: none;
+}
+
 header #logo{
     display: inline-block;
     width: 10%;
@@ -99,7 +111,6 @@ footer{
     background-color: #3B3B3B;
     color: #FFFFFF;
     width: 100%;
-    height: 340px;
 }
 
 #top_footer{
@@ -181,7 +192,8 @@ footer #carte .leaflet-control-zoom, footer #carte .leaflet-control-attribution{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;     
+    font-size: 20px;    
+    padding-bottom: 30px;
 }
 
 footer #droits{
@@ -223,6 +235,7 @@ footer #reglements a{
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    z-index: 1;
 }
 
 
@@ -1303,11 +1316,15 @@ footer #reglements a{
     padding-left: 50px;
 }
 
-/*VENTE*/
+/*********/
+/* VENTE */
+/*********/
+
 #titre_conditions_vente{
   
     font-size: 50px;
     margin-left: 350px;  
+    margin-bottom: 20px;
 }  
 
 #contenu_conditions_vente {
@@ -1383,22 +1400,204 @@ footer #reglements a{
     
 
 
-/*
-@media screen and (max-width: 1280px){
-   #lavideo{
-        width: 100px;
+@media screen and (max-width: 960px){
+    /********************/
+    /* HEADER principal */ 
+    /********************/
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        overflow: visible;
     }
-    footer{
-        width: 830px; 
-        height: 800px;
+    
+    header #logo, header #icon_menu_ouvert{
+        margin: 0 25px;
     }
-
-    #top_footer{
+    
+    header button#icon_menu_ouvert{
         display: block;
-    }    
-
-    footer #localisation{
-        display: block;
+    }
+    
+    header button#icon_menu_ouvert:hover, header button#icon_menu_ferme:hover{
+        background-color: #FFFFFF;
+    }
+    
+    header button#icon_menu_ouvert img, header button#icon_menu_ferme img{
+        width: 40px;
+    }
+    
+    header #menu_deroulant{
+        height: 100%;
+        width: 80%;
+        padding-top: 80px;
+        display: none;
         flex-direction: column;
-    }  
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        top: 0;
+        left: 20%;
+        z-index: 3;
+    }
+    
+    header #menu_deroulant button#icon_menu_ferme{
+        align-self: flex-end;
+        position: relative;
+        top: -28px;
+        left: -45px;
+    }
+    
+    header #menu_deroulant button#icon_menu_ferme:hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    header #menu_deroulant #menu{
+        align-self: flex-start;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header #menu_deroulant #langues{
+        display: flex;
+        flex-direction: row;        
+    }
+    
+    header #menu_deroulant #langues button{
+        color: #FFFFFF;
+        margin: 10px;
+    }
+    
+    header #menu_deroulant #menu a{
+        color: #FFFFFF;
+    }
+    
+    header #menu_deroulant button#icon_menu_ferme{
+        display: block;
+    }
+    
+    /********************/
+    /* FOOTER principal */ 
+    /********************/
+    footer #top_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer #top_footer #liens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    footer #top_footer #liens div{
+        width: 45%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    footer #top_footer #localisation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    footer #top_footer #localisation #titre_carte{
+        text-align: center;
+    }
+    
+    footer #top_footer #localisation #adresse_carte{
+        margin: 10px 0;
+    }
+    
+    footer #bottom_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer #bottom_footer div{
+        margin: 10px 0;
+    }
+    
+    /*********************/
+    /* BANNIERE générale */
+    /*********************/
+    
+    #banniere #citadelle1, #banniere #citadelle3{
+        display: none;
+    }
+    
+    #banniere img#citadelle2{
+        width: 100%;
+    }
+    
+    #banniere #chemin{
+        margin-left: -180px;
+    }
+    
+    /*********/
+    /* INDEX */ 
+    /*********/
+    
+    /*************/
+    /* EVENEMENT */ 
+    /*************/
+    
+    /****************/
+    /* INFORMATIONS */ 
+    /****************/
+    
+    /***************/
+    /* PARTENAIRES */ 
+    /***************/
+    
+    /***************/
+    /* INSCRIPTION */ 
+    /***************/ 
+    
+    /************/
+    /* GALERIES */ 
+    /************/
+    
+    /**********/
+    /* F.A.Q. */ 
+    /**********/
+    
+    /***********/
+    /* CONTACT */ 
+    /***********/
+    
+    /********************/
+    /* MENTIONS LEGALES */ 
+    /********************/
+    
+    /*******************/
+    /* CONFIDENTIALITE */ 
+    /*******************/
+    
+    /***********/
+    /* COOKIES */ 
+    /***********/
+    
+    /**********/
+    /* VENTES */ 
+    /**********/
+    
 }
