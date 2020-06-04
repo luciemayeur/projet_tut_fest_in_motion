@@ -1532,8 +1532,9 @@ th:last-child{
     border: 1px solid #707070;
     color: black;
     border-radius: 50px;
-    width: 800px;
+    width: 90%;
     margin: 50px;
+    position: relative;
 }
 
 .preview_ticket{
@@ -1565,8 +1566,9 @@ th:last-child{
   border: 1px solid #707070;
     color: black;
     border-radius: 50px; 
-    width: 800px;
+    width: 90%;
     margin: 50px;
+    position: relative;
 }
 
 .entete_place p{
@@ -1580,15 +1582,8 @@ th:last-child{
 
 .reglage_quantite{
     position:absolute;
-    top:1050px;
-    left: 700px;
-        
-}
-
-.reglage_quantite1{
-    position:absolute;
-    top:1360px;
-    left: 700px;
+    right: 20px;
+    bottom: 20px;
         
 }
 
@@ -1613,9 +1608,9 @@ th:last-child{
     padding: 15px;
     border-radius: 50px;
     font-size: 30px;
-    top: 1350px;
-    left: 1130px;
-    position: absolute;
+    top: 70px;
+    left: 25%;
+    position: relative;
     padding-left:200px;
     padding-right: 200px;
 }
@@ -2252,4 +2247,21 @@ th:last-child{
     /* PANIER */
     /**********/
     
+    #corps_page .titre_entete #titre_panier, #corps_page .titre_entete #sous_titres_panier{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_panier{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #corps_page .contenu_panier .panier_detail, #corps_page .contenu_panier .panier_resume{
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+    }
 }
