@@ -933,7 +933,9 @@ footer #reglements a{
     font-style: italic;
 }
 
-/*INFORMATIONS*/
+/****************/
+/* INFORMATIONS */
+/****************/
 
 .contenu_informations{
     display: block;
@@ -952,7 +954,7 @@ footer #reglements a{
 }
 
 .titre_contenu{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20px;
     text-align: center;
 }
