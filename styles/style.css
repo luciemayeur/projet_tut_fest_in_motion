@@ -2148,6 +2148,26 @@ th:last-child{
         text-align: center;
     }
     
+    #corps_page .contenu_faq .faq_question .question{
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #corps_page .contenu_faq .faq_question .question .bouton{
+        margin: 0;
+        margin-right: 25px;
+    }
+    
+    #corps_page .contenu_faq .faq_question .reponse{
+        margin: auto;
+        width: 80%;
+    }
+    
     
     /***********/
     /* CONTACT */ 
@@ -2195,4 +2215,10 @@ th:last-child{
         padding: 0;
         text-align: center;
     }
+    
+    
+    /**********/
+    /* PANIER */
+    /**********/
+    
 }
