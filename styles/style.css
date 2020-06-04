@@ -1908,6 +1908,43 @@ th, td {
     /* EVENEMENT */ 
     /*************/
     
+    #corps_page .titre_entete #titre_evenement, #corps_page .titre_entete #texte_p_evenement{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_evenement .entete_evenement p{
+        margin: 0;
+        text-align: justify;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .presentation{
+        width: 100%;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .presentation #img_presentation{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .professionels{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .professionels .texte_professionels h3{
+        margin-top: 25px;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .professionels #img_professionels{
+        width: 100%;
+    }
+    
+    
     /****************/
     /* INFORMATIONS */ 
     /****************/
