@@ -700,7 +700,6 @@ footer #reglements a{
     text-align: center;
     border-radius: 80px;
     color: #FFFFFF;
-    padding: 40px;
     padding-bottom: 10px;
     margin-top: 150px; 
     display: flex;
@@ -1859,6 +1858,7 @@ th, td {
     
     #preview_galeries #preview_photos img{
         width: 40%;
+        opacity: 1;
     }
     
     #reservation #contenu_reservation{
@@ -1943,6 +1943,29 @@ th, td {
     #corps_page .contenu_evenement .infos_evenement .professionels #img_professionels{
         width: 100%;
     }
+    
+    #corps_page .contenu_evenement .infos_evenement .souvenir{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .souvenir .texte_souvenir h3{
+        margin-top: 25px;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .souvenir #img_souvenir{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_evenement .infos_evenement .tarifs{
+        padding-bottom: 30px;
+    }  
+    
+    #corps_page .contenu_evenement .infos_evenement .tarifs #explication_asterisque{
+        top: 20px;
+        left: 60px;
+    }   
     
     
     /****************/
