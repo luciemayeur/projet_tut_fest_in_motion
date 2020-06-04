@@ -492,7 +492,7 @@ footer #reglements a{
 }
 
 .partenaire{
-    background-color: #AABAC0;
+    background: linear-gradient(#AABAC0, #808080);
     width: 800px;
     height: 600px;
     margin: 20px;
