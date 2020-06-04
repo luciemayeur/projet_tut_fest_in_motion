@@ -2173,6 +2173,37 @@ th:last-child{
     /* CONTACT */ 
     /***********/
     
+    #corps_page .entete_contact #titre_contact, #corps_page .entete_contact p{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #corps_page .contenu_contact #infos_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        border-bottom: 2px #FFFFFF solid;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    
+    #corps_page .contenu_contact #infos_contact p:nth-child(n+1){
+        align-self: flex-start;
+    }
+    
+    #corps_page .contenu_contact #formulaire_contact form #message{
+        resize: none;
+    }
+    
+    
     /********************/
     /* MENTIONS LEGALES */ 
     /********************/
