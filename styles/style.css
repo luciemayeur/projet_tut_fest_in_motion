@@ -2007,6 +2007,13 @@ th:last-child{
     /* PARTENAIRES */ 
     /***************/
     
+    #corps_page .entete_partenaire #titre_partenairesp, #corps_page .entete_partenaire #texte_p_partenaires{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    
     /***************/
     /* INSCRIPTION */ 
     /***************/ 
