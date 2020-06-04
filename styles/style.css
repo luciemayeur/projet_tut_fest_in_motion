@@ -298,6 +298,7 @@ footer #reglements a{
     background-color: rgba(239, 71, 111, 0.35);
     color: #FFFFFF;
     display: flex;
+    margin: auto;
 }
 
 #lavideo{
@@ -334,7 +335,7 @@ footer #reglements a{
 }
 
 #preview_photos{
-    width: 1600px;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 	margin: auto;
@@ -1838,6 +1839,70 @@ th, td {
     /*********/
     /* INDEX */ 
     /*********/
+    #promo_video{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    
+    #promo_video #texte_video{
+        padding: 10px 0;
+    } 
+    
+    #promo_video #video, #promo_video #video video{
+        width: 100%;
+    }
+    
+    #preview_galeries #preview_photos{
+        max-height: 1185px;
+        overflow-y: scroll;
+    }
+    
+    #preview_galeries #preview_photos img{
+        width: 40%;
+    }
+    
+    #reservation #contenu_reservation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #reservation #contenu_reservation #butt_reservation{
+        order: 2;
+        margin: 20px 0;
+        padding: 0;
+    }
+    
+    #reservation #contenu_reservation #butt_reservation a{
+        margin: 0;
+    }
+    
+    #reservation #contenu_reservation #description_reservation{
+        order: 1;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    #reservation #contenu_reservation #tarifs{
+        order: 3;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    #partenaires #images_partenaires{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #partenaires #images_partenaires img{
+        margin: 15px;
+    }
+    
     
     /*************/
     /* EVENEMENT */ 
