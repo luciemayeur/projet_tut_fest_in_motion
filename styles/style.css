@@ -1009,8 +1009,10 @@ footer #reglements a{
 }
 .img_photos{
     display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
 }
 
 .img_explications img{
@@ -1039,7 +1041,7 @@ footer #reglements a{
 
 .informations_img_photos{
     width: 25%;
-    margin: 50px;
+    margin: 25px;
 }
 
 .titre_explications{
@@ -1108,10 +1110,6 @@ footer #reglements a{
     font-size: 40px;
     text-align: center;
     padding-top: 50px;
-}
-
-#photos1{
-    margin-left: 110px;
 }
 
 /*MENTIONS LEGALES*/
@@ -1700,19 +1698,9 @@ th:last-child{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/******************************************************/
+/* MEDIA QUERIE RESPONSIVe POUR LES ECRANS DE -960px; */
+/******************************************************/
 
 @media screen and (max-width: 960px){
     /********************/
@@ -2002,6 +1990,86 @@ th:last-child{
     /****************/
     /* INFORMATIONS */ 
     /****************/
+    
+    #corps_page .titre_entete #titre_informations, #corps_page .titre_entete #texte_p_informations{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_explications{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_explications .texte_explications{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_explications .texte_explications .titre_explications{
+        margin-top: 30px;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_explications .img_explication, #corps_page .contenu_informations #couleurs .informations_explications .img_explications img{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_programme{
+        width: 100%;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_programme .texte_programme{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_programme .texte_programme .titre_programme{
+        margin-top: 30px;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_programme .img_programme, #corps_page .contenu_informations #couleurs .informations_programme .img_programme img{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_inscription{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_inscription .texte_inscription{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_inscription .texte_inscription .titre_inscription{
+        margin-top: 30px;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_inscription .img_inscription, #corps_page .contenu_informations #couleurs .informations_inscription .img_inscription img{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_exposants{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_exposants .texte_exposants{
+        width: 100%;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_exposants .texte_exposants .titre_exposants{
+        margin-top: 30px;
+    }
+    
+    #corps_page .contenu_informations #couleurs .informations_exposants .img_exposants, #corps_page .contenu_informations #couleurs .informations_exposants .img_exposants img{
+        width: 100%;
+    }
+    
         
     /***************/
     /* PARTENAIRES */ 
