@@ -474,6 +474,10 @@ footer #reglements a{
     top: 5px;
 }
 
+/**************/
+/* PARTENAIRE */
+/**************/
+
 #titre_partenairesp{
     font-size: 50px;
     margin-left: 95px;
@@ -489,24 +493,63 @@ footer #reglements a{
 
 .partenaire{
     background-color: #AABAC0;
-    width: 500px;
-    height: 500px;
-    margin: 15px;
+    width: 800px;
+    height: 600px;
+    margin: 20px;
+    position: relative;
 }
 
 .img_partenaire{
-    width: 500px;
-    height: auto;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.partenaire .explication_partenaire{
+    background-color: rgba(32, 30, 30, 0.38);
+    width: 700px;
+    height: 470px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.partenaire:hover .explication_partenaire{
+    opacity: 1;
+}
+
+.partenaire .explication_partenaire .nom_partenaire{
+    font-size: 38px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.partenaire .explication_partenaire .infos_partenaire{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 5px;
+    line-height: 25px;
 }
 
 
 #corps_page .item_pagep{
-    display: flex;
-	margin-left: 15%;
- 	flex-basis: 25%;
+    margin: auto;
 	text-align: center;
 	flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+ 	flex-basis: 25%;
     color: #FFFFFF;
 }
 
