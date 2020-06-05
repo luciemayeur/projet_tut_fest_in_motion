@@ -228,8 +228,10 @@ footer #reglements a{
 /* Banière */
 
 #photos_banniere img{
-    width: 1800px;
+    width: 100%;
     height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 /*********/
@@ -1806,14 +1808,18 @@ th:last-child{
     /*********************/
     /* BANNIERE générale */
     /*********************/
-   
+    
+    #banniere{
+        position: relative;
+    }
+    
     #chemin{
-        top: 250px;
+        top: 125px;
         left: 100px;
     }
     
     #photos_banniere img{
-        width:830px;
+        width: 100%;
         height: auto;
     }
     
