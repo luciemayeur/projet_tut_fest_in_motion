@@ -31,12 +31,10 @@ function cache_menu(){
 function menu_auto(x){
     if(!x.matches){
         document.getElementById("icon_menu_ouvert").style.display = "none";
-        document.getElementById("icon_menu_ferme").style.display = "block";
         document.getElementById("menu_deroulant").style.display = "flex";
     }
 }
 
 var longueur_fenetre = window.matchMedia("(max-width: 960px)");
-
 menu_auto(longueur_fenetre);
 longueur_fenetre.addListener(menu_auto);
