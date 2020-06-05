@@ -52,50 +52,46 @@ function sendMailJS(){
 /*Fonction supprimer un billet enfant*/
 /*INSCRIPTION*/
 function moins1(){
-   if(document.getElementById("quantite1_tableau").value > 0){
-     document.getElementById("quantite1_tableau").value= document.getElementById("quantite1_tableau").value -1;
+   if(parseInt(document.getElementById("quantite1_tableau").innerHTML) > 0){
+     document.getElementById("quantite1_tableau").innerHTML = parseInt(document.getElementById("quantite1_tableau").innerHTML) - 1;
        
-     document.getElementById("montant1_tableau").value= document.getElementById("montant1_tableau").value -10;  
+     document.getElementById("montant1_tableau").innerHTML = parseInt(document.getElementById("montant1_tableau").innerHTML) - 10;  
        
    }else{
-       document.getElementById("quantite1_tableau").value= 0;
+       document.getElementById("quantite1_tableau").innerHTML = 0;
        
-       document.getElementById("montant1_tableau").value= 0;
+       document.getElementById("montant1_tableau").innerHTML = 0;
    } 
 }
 
 /*Fonction ajouter un billet enfant*/
 
 function plus1(){
-     document.getElementById("quantite1_tableau").value= document.getElementById("quantite1_tableau").value + parseInt(1);
+     document.getElementById("quantite1_tableau").innerHTML = parseInt(document.getElementById("quantite1_tableau").innerHTML) + 1;
        
-     document.getElementById("montant1_tableau").value= document.getElementById("montant1_tableau").value + parseInt(10);  
-       
-   
+     document.getElementById("montant1_tableau").innerHTML = parseInt(document.getElementById("montant1_tableau").innerHTML) + 10; 
 }
 
 /*Fonction supprimer un billet aldulte*/
 function moins2(){
-   if(document.getElementById("quantite2_tableau").value > 0){
-     document.getElementById("quantite2_tableau").value= document.getElementById("quantite2_tableau").value -1;
+   if(parseInt(document.getElementById("quantite2_tableau").innerHTML) > 0){
+     document.getElementById("quantite2_tableau").innerHTML = parseInt(document.getElementById("quantite2_tableau").innerHTML) - 1;
        
-     document.getElementById("montant2_tableau").value= document.getElementById("montant2_tableau").value -15;  
+     document.getElementById("montant2_tableau").innerHTML = parseInt(document.getElementById("montant2_tableau").innerHTML) - 15;  
        
    }else{
-       document.getElementById("quantite2_tableau").value= 0;
+       document.getElementById("quantite2_tableau").innerHTML = 0;
        
-       document.getElementById("montant1_tableau2").value= 0;
+       document.getElementById("montant2_tableau").innerHTML = 0;
    } 
 }
 
 /*Fonction ajouter un billet adulte*/
 
 function plus2(){
-     document.getElementById("quantite2_tableau").value= document.getElementById("quantite2_tableau").value + parseInt(1);
+     document.getElementById("quantite2_tableau").innerHTML = parseInt(document.getElementById("quantite2_tableau").innerHTML) + 1;
        
-     document.getElementById("montant2_tableau").value= document.getElementById("montant2_tableau").value + parseInt(15);  
-       
-   
+     document.getElementById("montant2_tableau").innerHTML = parseInt(document.getElementById("montant2_tableau").innerHTML) + 15;
 }
 
 
