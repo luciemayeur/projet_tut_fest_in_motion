@@ -53,8 +53,8 @@ function sendMailJS(){
 function devoileReponse(num_question){
     if(document.getElementById("reponse"+num_question).style.display == "block"){
        document.getElementById("reponse"+num_question).style.display = "none";
-       document.getElementById("img_bouton"+num_question).src = "../images/arrow_down.png";       
+       document.getElementById("img_bouton"+num_question).src = "../images/arrow_left.png";       
     }else{
        document.getElementById("reponse"+num_question).style.display = "block";
-       document.getElementById("img_bouton"+num_question).src = "../images/arrow_left.png";    }
+       document.getElementById("img_bouton"+num_question).src = "../images/arrow_down.png";    }
 }
