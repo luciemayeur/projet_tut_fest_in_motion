@@ -227,6 +227,10 @@ footer #reglements a{
 
 /* Banière */
 
+#banniere{
+    background-color: rgba(12, 59, 76,0.5);
+}
+
 #photos_banniere img{
     width: 100%;
     height: auto;
