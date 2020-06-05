@@ -48,6 +48,7 @@ function sendMailJS(){
     }
 }
 
+
 /*Fonction supprimer un billet enfant*/
 /*INSCRIPTION*/
 function moins1(){
@@ -98,5 +99,13 @@ function plus2(){
 }
 
 
+/* Fonction pour le déroulement des réponses dans F.A.Q. */
 
-
+function devoileReponse(num_question){
+    if(document.getElementById("reponse"+num_question).style.display == "block"){
+       document.getElementById("reponse"+num_question).style.display = "none";
+       document.getElementById("img_bouton"+num_question).src = "../images/arrow_left.png";       
+    }else{
+       document.getElementById("reponse"+num_question).style.display = "block";
+       document.getElementById("img_bouton"+num_question).src = "../images/arrow_down.png";    }
+}

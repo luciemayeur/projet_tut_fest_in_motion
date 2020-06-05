@@ -1661,7 +1661,7 @@ th:last-child{
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     font-size: 20px;
-    display: flex;
+    display: none;
     margin-left: 220px;
     width: 1200px;
     height: 200px;
@@ -1820,6 +1820,7 @@ th:last-child{
     
     #banniere{
         position: relative;
+        z-index: 1;
     }
     
     #chemin{
