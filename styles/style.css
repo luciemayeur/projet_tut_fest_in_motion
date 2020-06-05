@@ -888,7 +888,34 @@ footer #reglements a{
 
 #presse_galerie{
     width: 700px;
+    position: relative;
+    overflow: hidden;
+}
 
+#presse_galerie img{
+    width: 100%;
+}
+
+#presse_galerie .lien_download{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#presse_galerie:hover .lien_download{
+    bottom: 0;
+}
+
+#presse_galerie .lien_download .icon_download{
+    width: 40px;
+    margin: 0 40px;
 }
 
 #lien_telechargement_presse{
@@ -911,9 +938,10 @@ footer #reglements a{
 }
 
 .titre_communique{
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 21%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #EF476F;
     font-family: "Noto Sans";
