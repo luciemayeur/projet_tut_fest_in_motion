@@ -16,6 +16,7 @@ function switchFR(){
     window.location.href = new_page;
 }
 
+
 /* Fonctions pour dérouler le menu (responsive) */
 
 function deroule_menu(){
@@ -28,13 +29,21 @@ function cache_menu(){
     document.getElementById("menu_deroulant").style.display = "none";
 }
 
-function menu_auto(x){
-    if(!x.matches){
-        document.getElementById("icon_menu_ouvert").style.display = "none";
-        document.getElementById("menu_deroulant").style.display = "flex";
+
+/* Fonction pour envoyer un mail depuis la page Contact */
+
+function sendMailJS(){
+    if(document.getElementById("civilite").value != "" && document.getElementById("mail").value != "" && document.getElementById("nom").value != "" && document.getElementById("prenom").value != "" && document.getElementById("message").value != ""){        
+        var civilite = document.getElementById("civilite").value;
+        var mail = document.getElementById("mail").value;
+        var nom = document.getElementById("nom").value;
+        var prenom = document.getElementById("prenom").value;
+        var sujet = document.getElementById("sujet").value;
+        var message = document.getElementById("message").value;
+        var envoieMessage = civilite.toUpperCase()+" "+nom+" "+prenom+" ("+mail+") \n "+message;
+        
+        envoieMessage = 'mailto:festinmotion@gmail.com?subject='+sujet+'&body='+envoieMessage;
+
+        window.open(envoieMessage);
     }
 }
-
-var longueur_fenetre = window.matchMedia("(max-width: 960px)");
-menu_auto(longueur_fenetre);
-longueur_fenetre.addListener(menu_auto);

@@ -851,6 +851,10 @@ footer #reglements a{
     font-size: 25px;
 }
 
+#envoie:hover{
+    cursor: default;
+}
+
 /************/
 /* GALERIES */
 /************/
