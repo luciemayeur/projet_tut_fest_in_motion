@@ -607,6 +607,7 @@ footer #reglements a{
 
 #img_professionels{
     width: 750px;
+    height: 550px;
 }
 
 #img_souvenir{
@@ -994,6 +995,7 @@ footer #reglements a{
 
 .img_explications img{
     width: 750px;
+    height: 500px;
 }
 
 .img_programme img{
@@ -1002,11 +1004,13 @@ footer #reglements a{
 }
 
 .img_inscription img{
-    width: 750px;  
+    width: 750px; 
+    height: 520px;
 } 
 
 .img_exposants img{
-    width: 750px; 
+    width: 750px;
+    height: 520px;
 } 
 
 #couleurs{
@@ -1025,7 +1029,7 @@ footer #reglements a{
     text-align: left;
     font-size: 40px;
     margin: 30px;
-    margin-top: 95px;
+    margin-top: 75px;
     }
 
 .titre_programme{
@@ -1039,14 +1043,14 @@ footer #reglements a{
     text-align: left;
     font-size: 40px;
     margin: 30px;
-    margin-top: 80px;
+    margin-top: 60px;
     }
 
 .titre_exposants{
     text-align: left;
     font-size: 40px;
     margin: 30px;
-    margin-top: 100px
+    margin-top: 80px
     }
 
 .texte_explications{
