@@ -105,3 +105,46 @@ function devoileReponse(num_question){
        document.getElementById("reponse"+num_question).style.display = "block";
        document.getElementById("img_bouton"+num_question).src = "../images/arrow_down.png";    }
 }
+
+
+/* FONCTIONS POUR REGLAGE PANIER */
+function panier_moins1(){
+   if(parseInt(document.getElementById("quantite1").innerHTML) > 0){
+       document.getElementById("quantite1").innerHTML = parseInt(document.getElementById("quantite1").innerHTML) - 1;
+       
+       document.getElementById("quantite1_recap").innerHTML = parseInt(document.getElementById("quantite1_recap").innerHTML) - 1;
+       
+       document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) - 10;  
+       
+   }else{
+       document.getElementById("quantite1").innerHTML = 0;       
+   } 
+}
+
+function panier_plus1(){
+    document.getElementById("quantite1").innerHTML = parseInt(document.getElementById("quantite1").innerHTML) + 1;
+    
+    document.getElementById("quantite1_recap").innerHTML = parseInt(document.getElementById("quantite1_recap").innerHTML) + 1;
+       
+    document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) + 10; 
+}
+
+function panier_moins2(){
+    if(parseInt(document.getElementById("quantite2").innerHTML) > 0){
+        document.getElementById("quantite2").innerHTML = parseInt(document.getElementById("quantite2").innerHTML) - 1;
+        
+        document.getElementById("quantite2_recap").innerHTML = parseInt(document.getElementById("quantite2_recap").innerHTML) - 1;
+       
+        document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) - 15;  
+       
+   }else{
+       document.getElementById("quantite1").innerHTML = 0;       
+   } 
+}
+function panier_plus2(){
+    document.getElementById("quantite2").innerHTML = parseInt(document.getElementById("quantite2").innerHTML) + 1;
+    
+    document.getElementById("quantite2_recap").innerHTML = parseInt(document.getElementById("quantite2_recap").innerHTML) + 1;
+       
+     document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) + 15; 
+}
