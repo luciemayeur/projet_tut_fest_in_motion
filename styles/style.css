@@ -227,42 +227,8 @@ footer #reglements a{
 
 /* Banière */
 
-#banniere{
-    position: relative; 
-    height: 300px;
-    overflow: hidden;   
-    display : flex;    
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    z-index: 1;
-}
-
-
-#banniere #photos_banniere{
-    position: absolute;
-    z-index: 2; 
-    text-align: center;
-    opacity: 60%;
-}
-
-#banniere #titre{
-    line-height: 1;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 60px; 
-    width: 600px; 
-    height: 400px; 
-    z-index: 2;
-    color: #EF476F;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Dosis';
-    font-size: 80px;
-}
-
 #photos_banniere img{
-    width: 33%;
+    width: 1800px;
     height: auto;
 }
 
@@ -470,7 +436,7 @@ footer #reglements a{
     line-height: 1;
     margin-bottom: 10px;
     position: absolute;
-    top: 240px; 
+    top: 430px; 
     left: 200px;
     width: 600px; 
     height: 400px; 
@@ -1698,7 +1664,7 @@ th:last-child{
 
 
 /******************************************************/
-/* MEDIA QUERIE RESPONSIVe POUR LES ECRANS DE -960px; */
+/* MEDIA QUERIE RESPONSIVE POUR LES ECRANS DE -960px; */
 /******************************************************/
 
 @media screen and (max-width: 960px){
@@ -1840,17 +1806,15 @@ th:last-child{
     /*********************/
     /* BANNIERE générale */
     /*********************/
-    
-    #banniere #citadelle1, #banniere #citadelle3{
-        display: none;
+   
+    #chemin{
+        top: 250px;
+        left: 100px;
     }
     
-    #banniere img#citadelle2{
-        width: 100%;
-    }
-    
-    #banniere #chemin{
-        margin-left: -180px;
+    #photos_banniere img{
+        width:830px;
+        height: auto;
     }
     
     /*********/
