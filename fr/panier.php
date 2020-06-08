@@ -27,6 +27,8 @@
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
         
         <script src="../scripts/script.js" type="text/javascript"></script>
+        <script src="../librairies/jspdf.js" type="text/javascript"></script>
+        <script src="../librairies/jspdf.debug.js" type="text/javascript"></script>
     </head>
     
     <body>
