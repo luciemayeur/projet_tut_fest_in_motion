@@ -14,6 +14,7 @@ function switchFR(){
     new_page = new_page.replace('/en/','/fr/');
     
     window.location.href = new_page;
+    
 }
 
 
