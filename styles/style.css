@@ -1709,7 +1709,8 @@ th:last-child{
 }
 
 .bouton{
-    margin-left: 1020px;
+    position: absolute;
+    left: 1450px;
     background-color: white;
     border: none;
 }
@@ -1720,6 +1721,7 @@ th:last-child{
 
 .question p{
     padding:15px;
+    
 }
 
 .reponse{
@@ -2213,6 +2215,10 @@ th:last-child{
         width: 80%;
     }
     
+    .faq_question .bouton{
+        position: absolute;
+        left: 700px;      
+    }
     
     /***********/
     /* CONTACT */ 
