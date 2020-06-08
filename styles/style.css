@@ -1649,10 +1649,11 @@ th:last-child{
 }
 
 #lien_paiement{
-     color: white;
+    color: white;
     background-color: #6592B4;
     text-decoration: none;
     padding: 15px;
+    border: none;
     border-radius: 50px;
     font-size: 30px;
     top: 70px;

@@ -151,5 +151,5 @@ function panier_plus2(){
 
 /* FONCTION POUR IMPRIMER LES TICKETS */
 function imprimTickets(){
-    
+    console.log("Impression");
 }
