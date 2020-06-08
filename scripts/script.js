@@ -138,7 +138,7 @@ function panier_moins2(){
         document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) - 15;  
        
    }else{
-       document.getElementById("quantite1").innerHTML = 0;       
+       document.getElementById("quantite2").innerHTML = 0;       
    } 
 }
 function panier_plus2(){
@@ -147,4 +147,9 @@ function panier_plus2(){
     document.getElementById("quantite2_recap").innerHTML = parseInt(document.getElementById("quantite2_recap").innerHTML) + 1;
        
      document.getElementById("total").innerHTML = parseInt(document.getElementById("total").innerHTML) + 15; 
+}
+
+/* FONCTION POUR IMPRIMER LES TICKETS */
+function imprimTickets(){
+    
 }
