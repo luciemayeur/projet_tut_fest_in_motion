@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,18 +25,18 @@
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +44,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -57,7 +60,7 @@
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
             
-            <span id="chemin" class="item_pagep"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Partenaires</span>
+            <span id="chemin" class="item_pagep"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Partenaires</span>
         </section>
         
         <div id="corps_page">
@@ -185,17 +188,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -220,7 +223,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

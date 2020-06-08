@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Votre panier</title>
+        <title>FEST'IN MOTION - Inscription</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -22,18 +25,18 @@
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +44,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -56,75 +59,52 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Panier</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Inscription</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
-                <h2 id="titre_panier">Panier</h2>
-                <p id="sous_titres_panier">Retrouvez ci-dessous le résumé de votre commande pour assister au festival.</p>
+                <h2 id="titre_inscription">Inscription</h2>
+                <p id="sous_titres_inscription">Inscrivez-vous pour nous rejoindre et assister au festival.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
-            <section class="item_page contenu_panier">
-                <div class="panier_detail">
-                    <h3 class="titre_panier_vue">Votre panier</h3>
-                    
-                    <div id="traitgris"><hr></div>
-                    <!-- Ligne horizontale -->
-                    
-                    <div class="place_enfant">
-                        <div class="entete_place">
-                            <img class="preview_ticket" src="../images/ticket_festinmotion.png" alt="Ticket Fest'In Motion" />
-                        
-                            <p>Fest'In Motion - Entrée Enfant (-10 ans)</p>
-                          </div>  
-                        <div class="reglage_quantite">
-                            
-                            <p><button id="moins1" onclick="panier_moins1();"><img src="../images/icon_moins.png" alt="Icône moins" />
-                            </button><button id="plus1" onclick="panier_plus1();"><img src="../images/icon_plus.png" alt="Icône plus" /></button></p>                         
-                             <p class="quantite">
-                            <strong>Quantité :</strong> <span id="quantite1">0</span></p>
-                            
-                        
-                            </div>   
+            <section class="item_page contenu_inscription">
+                <div class="formulaire_inscription">
+                    <div id="entete_formulaire">
+                        <h3>Fest'In Motion - Du 7 au 9 août 2020</h3>
                     </div>
-                    
-                    <div class="place_adulte">
-                        <div class="entete_place">
-                            <img class="preview_ticket" src="../images/ticket_festinmotion.png" alt="Ticket Fest'In Motion" />
-                            <p>Fest'In Motion - Entrée Adulte</p>
-                        </div>
-                        <div class="reglage_quantite">
-                            <p><button id="moins2" onclick="panier_moins2();"><img src="../images/icon_moins.png" alt="Icône moins" /></button><button id="plus2" onclick="panier_plus2();"><img src="../images/icon_plus.png" alt="Icône plus" /></button></p>
-                            <p class="quantite"><strong>Quantité :</strong> <span id="quantite2">0</span></p>
-                        </div>
+                    <div id="tableau_formulaire">
+                        <form action="panier.php" method="post">
+                        <table>
+                            <tr class="entete_tableau">
+                                <th class="gauche">Type</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                                <th>Montant</th>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Entrée Enfant (-10 ans)</td>
+                                <td><span class="prix_tableau">10€</span>00</td>
+                                <td><img id="btn1_moins_tableau" onclick="moins1();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite1_tableau" name="quantite_enfant" value="0" readonly /> <img id="btn1_plus_tableau" onclick="plus1();" src="../images/icon_plus.png" alt="Icon plus" /></td>
+                                <td class="montant"><input type="text" id="montant1_tableau" name="montant_enfant" value="0" readonly />€00</td>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Entrée Adulte</td>
+                                <td><span class="prix_tableau">15€</span>00</td>
+                                <td><img id="btn2_moins_tableau" onclick="moins2();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite2_tableau" name="quantite_adulte" value="0" readonly /> <img id="btn2_plus_tableau" onclick="plus2();" src="../images/icon_plus.png" alt="Icon plus" /></td>
+                                <td class="montant"><input type="text" id="montant2_tableau" name="montant_adulte" value="0" readonly />€00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <input type="submit" id="lien_panier" value="Accéder au panier" />
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
                     </div>
-                    
-                </div>
-                
-                <!-- Ligne verticale -->
-                
-                <div class="panier_resume">
-                    <h3 class="titre_panier_vue">Votre panier</h3>
-                    
-                    <div id='traitgris'><hr></div>
-                    <!-- Ligne horizontale -->
-                    
-                    <p>Entrée Enfant ...................... <span id="quantite1_recap">0</span></p>
-                    <p>Entrée Adulte ...................... <span id="quantite2_recap">0</span></p>
-                    
-                    <div class="total_paiement">
-                        <h4>Total :</h4>
-                        <span id="total">0</span>€00
-                    </div>
-                    <!-- Ligne horizontale -->
-                    <div id='traitgris'><hr></div>
-                    
-                    <button id="lien_paiement" onclick="imprimTickets();">Payer</button>
-                    
                 </div>
             </section>
         </div>
@@ -133,17 +113,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -168,7 +148,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         
