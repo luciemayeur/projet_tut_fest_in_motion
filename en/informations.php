@@ -2,7 +2,7 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
@@ -30,11 +30,11 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.php">Événement</a>
-                    <a href="inscription.php">Inscription</a>
-                    <a href="partenaires.php">Partenaires</a>
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
                     <a href="informations.php">Informations</a>
-                    <a href="galeries.php">Galerie</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -48,8 +48,8 @@
                 </div>
 
                 <div id="langues">
-                    <button id="french" class="active" onclick="switchFR();">FR</button>
-                    <button id="english" onclick="switchEN();">EN</button>
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -59,38 +59,38 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Informations</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Informations</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
                 <h2 id="titre_informations">Informations</h2>
-                <p id="texte_p_informations">Retrouvez ci-dessous toutes les informations (dates, horaires, stands, ...) à propos de notre festival.</p>
+                <p id="texte_p_informations">Find below all the information (dates, times, stands, ...) about our festival.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
             <section class="item_page contenu_informations">
-                <h3 class="titre_contenu">Festival International du film d'animation amateur 2020</h3>
+                <h3 class="titre_contenu">International Amateur Animation Film Festival 2020</h3>
                 <p class="sous_titre_contenu">
-                    Le Fest'In Motion est un festival, qui vous propose des films d'animation au fort potentiel du cinéma.<br/>
-                    De l'animation 3D jusqu'au stop motion, l'objectif est de vous faire découvrir une autre facette du cinéma d'animation.
+                    Fest'In Motion is a festival, which offers animated films with strong cinema potential.<br/>
+                    From 3D animation to stop motion, the objective is to make you discover another facet of animation cinema.
                 </p>
         <div id=couleurs>        
                 <div class="informations_explications item_page">
                     <div class="texte_explications">
                         <h3 class="titre_explications">
                             Fest'In Motion,<br/>
-                            c'est quoi ?
+                            what's this ?
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Le Fest'In Motion est un festival qui a lieu pendant 3 jours et qui vous propose de découvrir des films d'animation.<br/>
-                            Mais, le Fest'In Motion, c'est aussi l'opportunité de rencontrer des professionnels dans le milieu du cinéma, de l'animation et de la photographie.
+                            Fest'In Motion is a festival which takes place for 3 days and which invites you to discover animated films.<br/>
+                            But, Fest'In Motion is also the opportunity to meet professionals in the world of cinema, animation and photography.
                         </p>
                         <p>
-                            Pendant 3 jours, 20 films seront diffusés sur de grands écrans afin que vous puissiez les admirer.                            
+                            For 3 days, 20 films will be broadcast on large screens so that you can admire them.
                         </p>
                     </div>
                     <div class="img_explications">
@@ -105,15 +105,15 @@
                     <div class="texte_programme">
                         <h3 class="titre_programme">
                             Fest'In Motion,<br/>
-                            quel est le programme ?
+                            what is the program ?
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Le Fest'In Motion, c'est la diffusion de plus de 30 heures de films d'animation pour élargir votre culture cinématographique.
+                            Fest'In Motion is the broadcasting of over 30 hours of animated films to broaden your cinematographic culture.
                         </p>
                         <p>
-                            Vous aurez aussi la possibilité de rencontrer des professionnels afin de pouvoir échanger avec eux, les questionner sur leur parcours, les demander des conseils, ...<br/>
-                            Des expositions et des conférences seront également présentent afin de vous présenter les nouveaux projets de nos invités.
+                            You will also have the possibility of meeting professionals in order to be able to exchange with them, question them on their journey, ask them for advice, ...<br/>
+                            Exhibitions and conferences will also be present to present the new projects of our guests.
                         </p>
                     </div>
                 </div>
@@ -122,16 +122,16 @@
                     <div class="texte_inscription">
                         <h3 class="titre_inscription">
                             Fest'In Motion,<br/>
-                            comment y assister ?
+                            how to attend?
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Les inscriptions pour assister au festival se font sur notre site officiel, la page <a class="lien_inscription1" href="inscription.php">Inscription.</a>
+                            Registrations to attend the festival are made on our official website, the page <a class="lien_inscription1" href="inscription.php">Registration.</a>
                         </p>
                         <p>
-                            Vous aurez aussi la possibilité de rencontrer des professionnels afin de pouvoir échanger avec eux, les questionner sur leur parcours, les demander des conseils, ...<br/>
-                            Des expositions et des conférences seront également présentes afin de vous présenter les nouveaux projets de nos invités.<br/>
-                            Le festival est accessible depuis les autoroutes A16, A25 et A26.
+                            You will also have the possibility of meeting professionals in order to be able to exchange with them, question them on their journey, ask them for advice, ...<br/>
+                            Exhibitions and conferences will also be present to present the new projects of our guests.<br/>
+                            The festival is accessible from the A16, A25 and A26 motorways.
                         </p>
                     </div>
                     <div class="img_inscription">
@@ -146,15 +146,15 @@
                     <div class="texte_exposants">
                         <h3 class="titre_exposants">
                             Fest'In Motion,<br/>
-                            qui y vient ?
+                            who comes there?
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Notre festival fait venir des personnalités de l'animation tels que Disney, Pixar et même de petits producteurs indépendants.
+                            Our festival brings together animation personalities such as Disney, Pixar and even small independent producers.
                         </p>
                         <p>
-                            Mais, nous faisons aussi venir des jurys du cinéma d'animation afin d'analyser les films que vous verrez.<br/>
-                            Vous aurez alors l'occasion d'échanger avec eux mais aussi, leur poser des questions sur leur métier, leur parcours et bien d'autres.
+                            But, we also bring in animation cinema juries to analyze the films you will see.<br/>
+                            You will then have the opportunity to exchange with them but also, ask them questions about their profession, their career and many others.
                         </p>
                     </div>
                 </div>
@@ -163,16 +163,16 @@
                     <div class="texte_programme">
                         <h3 class="titre_programme">
                             Fest'In Motion,<br/>
-                            comment y séjourner ?
+                            how to stay there?
                         </h3>
                         <!-- Ligne horizontale -->
                         <p>
-                            Au cas où vous devrez venir de loin, nous vous mettens à disposition plusieurs solutions pour y séjourner sur place.
+                            In case you have to come from far away, we provide you with several solutions for staying there.
                         </p>
                         <p>
-                            Les parkings gratuits sont Parkplatz Rue Léon Jacques Lesage, Bassin Ouest Boulevard de la Résidence, Parking de la Gare et Parking de la Mairie.<br/>
-                            La Gare de Calais Est à 4 minutes en voitures, 18 minutes à pieds ou par la ligne 5 des bus de villes.<br/>
-                            Et enfin, voici quelques hôtels qui seront prêts à vous loger : Citadel Hotel, Métropol’Hotel, Hotel Première Classe Calais, Brit Hotel Calais, B&B hôtel calais centre saint pierre, Holiday Inn Calais, Hotel Meurice, Aire de camping-car.
+                            The free car parks are Parkplatz Rue Léon Jacques Lesage, Bassin Ouest Boulevard de la Résidence, Parking de la Gare and Parking de la Mairie.<br/>
+                            Calais Est train station is 4 minutes by car, 18 minutes on foot or by line 5 of the city buses.<br/>
+                            And finally, here are some hotels that will be ready to accommodate you: Citadel Hotel, Métropol’Hotel, Hotel Première Classe Calais, Brit Hotel Calais, B&B hotel calais center saint pierre, Holiday Inn Calais, Hotel Meurice, Motorhome stopover.
                         </p>
                     </div>
                     <div class="img_programme">
@@ -182,7 +182,7 @@
       </div>          
                 <div class="informations_photos item_page">
                     <div>
-                        <h3 class="titre_photos">Fest'In Motion en photo</h3>
+                        <h3 class="titre_photos">Fest'In Motion in photo</h3>
                     </div>
                     <!-- Ligne horizontale -->
                     <div class="img_photos">
@@ -198,13 +198,13 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.php">Événement</a>
-                        <a href="inscription.php">Inscription</a>
-                        <a href="partenaires.php">Partenaires</a>
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
                         <a href="informations.php">Informations</a>
-                        <a href="galeries.php">Galerie</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
@@ -229,11 +229,11 @@
             <div id="trait"><hr></div>          
 
             <div id="bottom_footer">
-                <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
             </div>
         </footer>
         
