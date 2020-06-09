@@ -2,14 +2,14 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Galeries</title>
+        <title>FEST'IN MOTION - Galleries</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -30,11 +30,11 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.php">Événement</a>
-                    <a href="inscription.php">Inscription</a>
-                    <a href="partenaires.php">Partenaires</a>
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
                     <a href="informations.php">Informations</a>
-                    <a href="galeries.php">Galerie</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -48,8 +48,8 @@
                 </div>
 
                 <div id="langues">
-                    <button id="french" class="active" onclick="switchFR();">FR</button>
-                    <button id="english" onclick="switchEN();">EN</button>
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -59,13 +59,13 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Galerie</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Gallery</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
-                <h2 id="titre_galeries">Galerie</h2>
-                <p id="texte_p_galeries">Retrouvez ci-dessous toutes les photos, vidéos, affiches, flyers et documents de nos festival.</p>
+                <h2 id="titre_galeries">Gallery</h2>
+                <p id="texte_p_galeries">Find below all the photos, videos, posters, flyers and documents of our festivals.</p>
             </section>
             
             <div id="trait"><hr></div>
@@ -73,7 +73,7 @@
             
             <section class="item_page contenu_galeries">
                 <div class="categorie_photos">
-                    <h2 class="titre_categorie">Photos</h2>
+                    <h2 class="titre_categorie">Pictures</h2>
                     <div class="ensemble_categorie">
                         
                         <div class="download_image">
@@ -128,21 +128,21 @@
                 </div>
                 
                 <div class="categorie_vidéos">
-                    <h2 class="titre_categorie">Vidéos</h2>
+                    <h2 class="titre_categorie">Videos</h2>
                     <div class="ensemble_categorie">
                         <video class="videos" controls poster="../images/video.PNG">
                             <source src="../videos/PROMO.mp4" type="video/mp4">
-                            Une erreur est survenue ! Il semblerait que votre navigateur ne puisse pas lire notre vidéo.
+                            An error has occurred ! It looks like your browser cannot play our video.
                         </video>
                         <video class="videos" controls>
                             <source src="../videos/video2.mp4" type="video/mp4">
-                            Une erreur est survenue ! Il semblerait que votre navigateur ne puisse pas lire notre vidéo.
+                            An error has occurred ! It looks like your browser cannot play our video.
                         </video>
                     </div>
                 </div>
                 
                 <div class="categorie_illustrations">
-                    <h2 class="titre_categorie">Affiches</h2>
+                    <h2 class="titre_categorie">Posters</h2>
                     <div class="ensemble_categorie">
                         
                         <div class="download_image">
@@ -165,12 +165,12 @@
                 </div>
                 
                 <div class="categorie_communique">
-                    <h2 class="titre_categorie">Communiqué de presse</h2>
+                    <h2 class="titre_categorie">Press release</h2>
                     <div class="ensemble_categorie">
                         <div id="presse_galerie">
                             <img src="../images/citadelle1.jpg" alt="Communiqué de presse" />
                             <p class="titre_communique">
-                                Communiqué de presse<br/>
+                                Press release<br/>
                                 -<br/>
                                 Fest'In Motion
                             </p>
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                         
-                        <a href="../documents/fr/communique.pdf" id="lien_telechargement_presse" download="communique_de_presse.pdf">Télécharger le <br/>communiqué</a>
+                        <a href="../documents/fr/communique.pdf" id="lien_telechargement_presse" download="communique_de_presse.pdf">Download the<br/>press release</a>
                     </div>
                    
                 </div>
@@ -190,13 +190,13 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.php">Événement</a>
-                        <a href="inscription.php">Inscription</a>
-                        <a href="partenaires.php">Partenaires</a>
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
                         <a href="informations.php">Informations</a>
-                        <a href="galeries.php">Galerie</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
@@ -221,11 +221,11 @@
             <div id="trait"><hr></div>          
 
             <div id="bottom_footer">
-                <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
             </div>
         </footer>
         
