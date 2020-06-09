@@ -2,14 +2,14 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Événement</title>
+        <title>FEST'IN MOTION - Event</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -30,11 +30,11 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.php">Événement</a>
-                    <a href="inscription.php">Inscription</a>
-                    <a href="partenaires.php">Partenaires</a>
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
                     <a href="informations.php">Informations</a>
-                    <a href="galeries.php">Galerie</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -48,8 +48,8 @@
                 </div>
 
                 <div id="langues">
-                    <button id="french" class="active" onclick="switchFR();">FR</button>
-                    <button id="english" onclick="switchEN();">EN</button>
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -59,13 +59,13 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Événement</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Event</span>
         </section>
         
         <div id="corps_page">
             <section class="titre_entete item_page">
-                <h2 id="titre_evenement">Événement</h2>
-                <p id="texte_p_evenement">Retrouvez ci-dessous la présentation de notre festival.</p>
+                <h2 id="titre_evenement">Event</h2>
+                <p id="texte_p_evenement">Find below the presentation of our festival.</p>
             </section>
             
             <div id="trait"><hr></div>
@@ -74,13 +74,13 @@
             <section class="item_page contenu_evenement">
                 <div class="item_page entete_evenement">
                     <h2>
-                        Festival International du film d'animation amateur 2020<br/>
-                        7/8/9 AOÛT 2020 - CALAIS
+                        International Amateur Animation Film Festival 2020<br/>
+                        7/8/9 AUGUST 2020 - CALAIS
                     </h2>
                     <p>
-                        Retrouvez-nous à La Citadelle de Calais pour vivre des moments magiques.<br/>
-                        Ouvert à tous, vous pourrez profiter de nos diffusions, nos stands, nos bars et plein d'autres choses.<br/>
-                        <a href="informations.php" class="savoir_plus">En savoir plus</a>
+                        Join us at La Citadelle de Calais for magical moments.<br/>
+                        Open to everyone, you can enjoy our broadcasts, our stands, our bars and many other things.<br/>
+                        <a href="informations.php" class="savoir_plus">Find out more</a>
                     </p>
                 </div>
                 <div class="item_page infos_evenement">
@@ -90,22 +90,22 @@
                         </div>
                         <div class="texte_presentation">
                             <h3>
-                                Un festival de 3 jours,<br/>
-                                avec 20 films d'animation :
+                                A 3-day festival,<br/>
+                                with 20 animated films :
                             </h3>
                             <ul>
-                                <li>Découvrez un univers animé</li>
-                                <li>Rencontrez des professionnels</li>
-                                <li>Évadez-vous de la réalité</li>
-                                <li>Repartez avec des étoiles pleins les yeux</li>
+                                <li>Discover a lively universe</li>
+                                <li>Meet professionals</li>
+                                <li>Get away from reality</li>
+                                <li>Leave with stars full of eyes</li>
                             </ul>
                             <!-- Ligne horizontale -->
                             <p>
-                                Un festival accessible à tous, seul, en famille ou entre amis, où la fiction devient réalité et où les formes et le dessin prennent vie.
+                                A festival accessible to everyone, alone, with family or friends, where fiction becomes reality and where forms and drawing come to life.
                             </p>
                             <!-- Ligne horizontale -->
                             <p class="citation">
-                                "Pour que la vie soit un conte de fées, il suffit peut-être simplement d'y croire ..."<br/>
+                                "For life to be a fairy tale, it may be enough to just believe in it ..."<br/>
                             </p>
                             <span class="auteur">Walt Disney</span>
                         </div>
@@ -114,15 +114,15 @@
                     <div class="professionels">
                         <div class="texte_professionels">
                             <h3>
-                                Des professionnels dans le milieu,<br/>
-                                mais pas que.
+                                Professionals in the industry,<br/>
+                                but not only.
                             </h3>
                             <!-- Ligne horizontale -->
                             <p>
-                                L'animation, un domaine du cinéma parfois mis à l’écart, mais qui mérite toute notre attention, et pour cause : il réunit toutes les générations, fait briller les yeux des petits et colle des sourires sur les visages des plus grands.
+                                Animation, an area of cinema that is sometimes overlooked, but which deserves our full attention, and for good reason: it brings together all generations, makes the eyes of the little ones shine and smiles on the faces of the older ones.
                             </p>
                             <p>
-                                Nous tenons aussi à donner de la visibilité à de jeunes équipes de réalisation dont le travail mérite d’être reconnu, leur permettre de progresser et d’apprendre en échangeant et en étant jugé par un jury de cinéastes professionnels.
+                                We also want to give visibility to young filmmakers whose work deserves to be recognized, allow them to progress and learn by exchanging and being judged by a jury of professional filmmakers.
                             </p>
                         </div>
                         <div class="photo_professionels">
@@ -136,31 +136,31 @@
                         </div>
                         <div class="texte_souvenir">
                             <h3>
-                                Venez avec des ambitions.<br/>
-                                Repartez avec des étoiles pleins les yeux.
+                                Come with ambitions.<br/>
+                                Leave with stars full of eyes.
                             </h3>
                             <!-- Ligne horizontale -->
                             <p>
-                                Venir à Fest’In Motion c’est participer à un marathon d’animation pour débutant et initiés. Découvrir pour certains, se perfectionner pour d’autres, mais surtout partager un moment ensemble, tout cela dans le cadre exceptionnel qu’est celui de la Citadelle de Calais, ou nous ferons tout pour faire régner la convivialité grâce à une ambiance décontractée et agréable.
+                                Coming to Fest’In Motion means participating in an animation marathon for beginners and initiates. Discover for some, improve for others, but above all share a moment together, all this in the exceptional setting of the Citadel of Calais, where we will do everything to maintain conviviality thanks to a relaxed and pleasant atmosphere. .
                             </p>
                         </div>
                     </div>
                     
                     <div class="tarifs">
-                        <h3>TARIFS</h3>
+                        <h3>PRICES</h3>
                         <p>
-                            Venez-nous rejoindre !!!
+                            Come join us !!!
                         </p>
                         
                         <div id="prix_tarifs">                           
-                            <div id="prix_adulte"><span>15</span>€00 / adulte</div>
+                            <div id="prix_adulte"><span>15</span>€00 / adult</div>
 
-                            <div id="prix_enfant"><span>10</span>€00 / enfant<sup>*</sup></div>
+                            <div id="prix_enfant"><span>10</span>€00 / child<sup>*</sup></div>
                         </div>
                         
-                        <a href="inscription.php" class="lien_inscription">Je vous rejoins</a>
+                        <a href="inscription.php" class="lien_inscription">I'm joining you</a>
                         
-                        <span id="explication_asterisque" class="asterisque"><sup>*</sup>Correspond aux enfants de moins de 10 ans</span>                
+                        <span id="explication_asterisque" class="asterisque"><sup>*</sup>Corresponds to children under 10 years old</span>                
                     </div>
                 </div>
             </section>
@@ -170,13 +170,13 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.php">Événement</a>
-                        <a href="inscription.php">Inscription</a>
-                        <a href="partenaires.php">Partenaires</a>
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
                         <a href="informations.php">Informations</a>
-                        <a href="galeries.php">Galerie</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
@@ -201,11 +201,11 @@
             <div id="trait"><hr></div>          
 
             <div id="bottom_footer">
-                <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
             </div>
         </footer>
         
