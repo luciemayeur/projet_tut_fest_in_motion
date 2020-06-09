@@ -66,7 +66,7 @@
         <div id="corps_page">
             <section class="item_page entete_partenaire">
                 <h2 id="titre_partenairesp">Partenaires</h2>
-                <p id="texte_p_partenaires">Retrouvez ci-dessous la liste de tous les bénévoltes et partenaires qui nous ont aidés dans cette immense projet.</p>
+                <p id="texte_p_partenaires">Retrouvez ci-dessous la liste de tous les bénévoles et partenaires qui nous ont aidés dans cette immense projet.</p>
             </section>
             
             <div id="trait"><hr></div>
@@ -223,7 +223,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

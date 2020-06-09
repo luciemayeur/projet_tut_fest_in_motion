@@ -102,7 +102,7 @@ header button:hover{
 }
 
 header button.active{
-    font-weight: bold;
+   font-weight: bold;
 }
 
 /* Footer global */

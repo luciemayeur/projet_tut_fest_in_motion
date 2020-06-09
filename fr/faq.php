@@ -74,7 +74,7 @@
             <section class="item_page contenu_faq">
                 <div class="faq_question">
                     <div id="question1" class="question">
-                        <p>La sortie est-elle définitive?</p>
+                        <p>La sortie est-elle définitive ?</p>
                         <button id="bouton1" class="bouton" onclick="devoileReponse(1);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton1" /></button>
                     </div>
                     <div id="reponse1" class="reponse">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="faq_question">
                     <div id="question2" class="question">
-                        <p>Les animaux sont-ils autorisés sur le site?</p>
+                        <p>Les animaux sont-ils autorisés sur le site ?</p>
                         <button id="bouton2" class="bouton" onclick="devoileReponse(2);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton2" /></button>
                     </div>
                     <div id="reponse2" class="reponse">
@@ -101,7 +101,7 @@
                 </div>
                 <div class="faq_question">
                     <div id="question4" class="question">
-                        <p>Objects trouvés/perdus ?</p>
+                        <p>Objets trouvés/perdus ?</p>
                         <button id="bouton4" class="bouton" onclick="devoileReponse(4);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton4" /></button>
                     </div>
                     <div id="reponse4" class="reponse">
@@ -159,7 +159,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

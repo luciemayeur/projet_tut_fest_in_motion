@@ -171,12 +171,12 @@
                         </p>
                         <p>
                             Les parkings gratuits sont Parkplatz Rue Léon Jacques Lesage, Bassin Ouest Boulevard de la Résidence, Parking de la Gare et Parking de la Mairie.<br/>
-                            La Gare de Calaisest à 4 minutes en voitures, 18 minutes à pieds ou par la ligne 5 des bus de villes.<br/>
+                            La Gare de Calais Est à 4 minutes en voitures, 18 minutes à pieds ou par la ligne 5 des bus de villes.<br/>
                             Et enfin, voici quelques hôtels qui seront prêts à vous loger : Citadel Hotel, Métropol’Hotel, Hotel Première Classe Calais, Brit Hotel Calais, B&B hôtel calais centre saint pierre, Holiday Inn Calais, Hotel Meurice, Aire de camping-car.
                         </p>
                     </div>
                     <div class="img_programme">
-                        <img src="../images/photo6.jpg" alt="Photo citadelle" />
+                        <img src="../images/photo2.jpg" alt="Photo citadelle" />
                     </div>
                 </div>
       </div>          
@@ -233,7 +233,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

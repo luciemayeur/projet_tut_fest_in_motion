@@ -33,7 +33,7 @@
                     <a href="evenement.php">Event</a>
                     <a href="inscription.php">Registration</a>
                     <a href="partenaires.php">Partners</a>
-                    <a href="informations.php">Information</a>
+                    <a href="informations.php">Informations</a>
                     <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
@@ -240,7 +240,7 @@
                         <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.php">Information</a>
+                        <a href="informations.php">Informations</a>
                         <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>

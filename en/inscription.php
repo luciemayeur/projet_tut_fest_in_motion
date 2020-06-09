@@ -2,7 +2,11 @@
     session_start();
 ?>
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="fr">
+=======
+<html lang="en">
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
@@ -25,11 +29,16 @@
     
     <body>
         <header>
+<<<<<<< HEAD
             <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+=======
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
+<<<<<<< HEAD
                     <a href="evenement.html">Event</a>
                     <a href="inscription.html">Registration</a>
                     <a href="partenaires.html">Partners</a>
@@ -37,6 +46,15 @@
                     <a href="galeries.html">Gallery</a>
                     <a href="faq.html">F.A.Q.</a>
                     <a href="contact.html">Contact</a>
+=======
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Gallery</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -44,12 +62,21 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
+<<<<<<< HEAD
                     <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
                     <button id="french" class="active" onclick="switchFR();">FR</button>
                     <button id="english" onclick="switchEN();">EN</button>
+=======
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                </div>
+
+                <div id="langues">
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -59,7 +86,11 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
+<<<<<<< HEAD
             <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Registration</span>
+=======
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Registration</span>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
         </section>
         
         <div id="corps_page">
@@ -77,6 +108,7 @@
                         <h3>Fest'In Motion - August 7-9, 2020</h3>
                     </div>
                     <div id="tableau_formulaire">
+<<<<<<< HEAD
                         <table>
                             <tr class="entete_tableau">
                                 <th class="gauche">Type</th>
@@ -101,6 +133,35 @@
                                 </td>
                             </tr>
                         </table>
+=======
+                        <form action="panier.php" method="post">
+                        <table>
+                            <tr class="entete_tableau">
+                                <th class="gauche">Type</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Child Entrance (-10 years old)</td>
+                                <td><span class="prix_tableau">10€</span>00</td>
+                                <td><img id="btn1_moins_tableau" onclick="moins1();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite1_tableau" name="quantite_enfant" value="0" readonly /> <img id="btn1_plus_tableau" onclick="plus1();" src="../images/icon_plus.png" alt="Icon plus" /></td>
+                                <td class="montant"><input type="text" id="montant1_tableau" name="montant_enfant" value="0" readonly />€00</td>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Adult Entrance</td>
+                                <td><span class="prix_tableau">15€</span>00</td>
+                                <td><img id="btn2_moins_tableau" onclick="moins2();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite2_tableau" name="quantite_adulte" value="0" readonly /> <img id="btn2_plus_tableau" onclick="plus2();" src="../images/icon_plus.png" alt="Icon plus" /></td>
+                                <td class="montant"><input type="text" id="montant2_tableau" name="montant_adulte" value="0" readonly />€00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <input type="submit" id="lien_panier" value="Accéder au panier" />
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
                     </div>
                 </div>
             </section>
@@ -110,6 +171,7 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
+<<<<<<< HEAD
                         <a href="evenement.html">Event</a>
                         <a href="inscription.html">Registration</a>
                         <a href="partenaires.html">Partners</a>
@@ -121,6 +183,19 @@
                     </div>
                     <div id="bloc_liens3">
                         <a href="contact.html">Contact</a>
+=======
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
+                    </div>
+                    <div id="bloc_liens2">
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Gallery</a>
+                        <a href="faq.php">F.A.Q.</a>
+                    </div>
+                    <div id="bloc_liens3">
+                        <a href="contact.php">Contact</a>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
                     </div>
                 </div>
                 <div id="localisation">
@@ -140,12 +215,21 @@
             
             <div id="trait"><hr></div>          
 
+<<<<<<< HEAD
              <div id="bottom_footer">
                 <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
                 <div id="realisation"><p>website realized by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
                 <div id="reglements"><p><a href="mentions_legales.html">Legal notices</a> | <a href="confidentialite.html">privacy policy</a> | <a href="cookies.html">cookies policy</a><br/>| <a href="ventes.html">terms of sale</a> | <a href="contact.html">contact us</a></p></div>
+=======
+            <div id="bottom_footer">
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
+                
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
+>>>>>>> b4cb91d4cfeb231d9e4105bafcb6243f6cf3e098
             </div>
         </footer>
         
