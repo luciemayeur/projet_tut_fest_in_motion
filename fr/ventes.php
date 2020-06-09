@@ -124,7 +124,7 @@
                     <p>
                         Vous pouvez passer commande :<br/>
                         <span class="possibilite_vente item_list">Sur Internet : <a href="inscription.php">festinmotion.000webhostapp.com/fr/inscription/</a></span><br/>
-                        <span class="possibilite_vente item_list">Par téléphone au tarif de 0.10 € TTC / min du lundi au samedi de 07h00 à 21h.</span>
+                        <span class="possibilite_vente item_list">Par téléphone au tarif de 0.10 € TTC / min du lundi au samedi de 07h00 à 21h00.</span>
                     </p>
                     <p>
                         Les informations contractuelles sont présentées en langue française et feront l'objet d'une confirmation au plus tard au moment de la validation de votre commande.
@@ -323,7 +323,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         
