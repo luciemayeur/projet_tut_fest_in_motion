@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - F.A.Q.</title>
+        <title>FEST'IN MOTION - Information</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -56,63 +59,119 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // F.A.Q.</span>
+            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Information</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
-                <h2 id="titre_faq">F.A.Q.</h2>
-                <p id="texte_p_faq">Retrouvez ci-dessous les questions pratiques à propos de nous et de notre festival.</p>
+                <h2 id="titre_informations">Information</h2>
+                <p id="texte_p_informations">Find below all the information (dates, schedules, stands, ...) about our festival.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
-            <section class="item_page contenu_faq">
-                <div class="faq_question">
-                    <div id="question1" class="question">
-                        <p>La sortie est-elle définitive?</p>
-                        <button id="bouton1" class="bouton" onclick="devoileReponse(1);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton1" /></button>
+            <section class="item_page contenu_informations">
+                <h3 class="titre_contenu">2020 Amateur animated film international festival</h3>
+                <p class="sous_titre_contenu">
+                    Fest'In Motion is a festival that seeks to offer you animated films with strong cinema potential.
+                    <br/>
+                    From 3D animation to stop motion, the objective is to make you discover another facet of animation cinema.
+                </p>
+        <div id=couleurs>        
+                <div class="informations_explications item_page">
+                    <div class="texte_explications">
+                        <h3 class="titre_explications">
+                            What is <br/>
+                            Fest’In Motion ?
+                        </h3>
+                        <!-- Ligne horizontale -->
+                        <p>
+                            The Fest'In Motion is a festival that takes place during 3 days and which proposes you to discover animated films.
+                            <br/>
+                            But, the Fest'In Motion is also the opportunity to meet professionals in the world of cinema, animation and photography.
+                        </p>
+                        <p>
+                            During 3 days, 15 films will be shown on big screens so that you can admire them.                         
+                        </p>
                     </div>
-                    <div id="reponse1" class="reponse">
-                       <p> Les festivaliers peuvent entrer et sortir librement. En raison du plan Vigipirate, la fouille à l’entrée est obligatoire.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question2" class="question">
-                        <p>Les animaux sont-ils autorisés sur le site?</p>
-                        <button id="bouton2" class="bouton" onclick="devoileReponse(2);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton2" /></button>
-                    </div>
-                    <div id="reponse2" class="reponse">
-                      <p>  Nos amis les animaux ne sont pas admis sur l’ensemble du site et au camping, pour des raisons d’hygiène, de sécurité et pour leur propre bien-être.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question3" class="question">
-                        <p>Quels sont les objets refusés à l'entrée du festival ?</p>
-                        <button id="bouton3" class="bouton" onclick="devoileReponse(3);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton3" /></button>
-                    </div>
-                    <div id="reponse3" class="reponse">
-                    <p>   Il est strictement interdit d’introduire : Des bouteilles d’alcool et de verre, les armes et autres substances explosives, inflammables ou volatiles, tous les objets dangereux, tout article pyrotechnique, signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question4" class="question">
-                        <p>Objects trouvés/perdus ?</p>
-                        <button id="bouton4" class="bouton" onclick="devoileReponse(4);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton4" /></button>
-                    </div>
-                    <div id="reponse4" class="reponse">
-                       <p> Pour votre confort, une consigne est disponible à l’entrée du festival 24h/24, ainsi qu’un espace objets trouvés. Les objets non récupérés seront remis à la mairie après le festival. Important : les objets encombrants comme les casques de motos ne pourront pas passer le contrôle.</p>
+                    <div class="img_explications">
+                        <img src="../images/photo3.jpg" alt="Photo citadelle" />
                     </div>
                 </div>
-                <div class="faq_question">
-                    <div id="question5" class="question">
-                        <p>Que faire en cas de problème ?</p>
-                        <button id="bouton5" class="bouton" onclick="devoileReponse(5);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton5" /></button>
+                
+                <div class="informations_programme item_page">
+                    <div class="img_programme">
+                        <img src="../images/photo4.jpg" alt="Photo citadelle" />
                     </div>
-                    <div id="reponse5" class="reponse">
-                       <p> En cas de problème, avertissez l’agent de sécurité le plus proche ou la Croix Rouge pour les problèmes médicaux.
-</p>
+                    <div class="texte_programme">
+                        <h3 class="titre_programme">
+                            Fest'In Motion,<br/>
+                            What is the program ?
+
+                        </h3>
+                        <!-- Ligne horizontale -->
+                        <p>
+                            The broadcast of more than 30 hours of animated films to broaden your film culture.
+                        </p>
+                        <p>
+                            You will also have the opportunity to meet professionals in order to exchange with them, ask them questions about their career path, ask them for advice, ...
+                            <br/>
+                            Exhibitions and conferences will also be present to present you the new projects of our guests.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="informations_inscription item_page">
+                    <div class="texte_inscription">
+                        <h3 class="titre_inscription">
+                            Fest'In Motion,<br/>
+                            How to attend ?
+                        </h3>
+                        <!-- Ligne horizontale -->
+                        <p>
+                            Registrations to attend the festival can be made on our official website, on the <a class="lien_inscription1" href="inscription.html">Registration</a>page.
+                        </p>
+                        <p>
+                            You will also have the opportunity to meet professionals in order to exchange with them, ask them questions about their career path, ask them for advice, ...<br/>
+                            Exhibitions and conferences will also be present to present you the new projects of our guests.<br/>
+                            The festival is accessible from the A16, A25 and A26 motorways.
+                        </p>
+                    </div>
+                    <div class="img_inscription">
+                        <img src="../images/photo5.jpg" alt="Photo citadelle" />
+                    </div>
+                </div>
+                
+                <div class="informations_exposants item_page">
+                    <div class="img_exposants">
+                        <img src="../images/photo6.jpg" alt="Photo citadelle" />
+                    </div>
+                    <div class="texte_exposants">
+                        <h3 class="titre_exposants">
+                            Fest'In Motion,<br/>
+                            Who's coming?
+                        </h3>
+                        <!-- Ligne horizontale -->
+                        <p>
+                            Our festival brings in animation personalities such as Disney, Pixar and even small independent producers.
+                        </p>
+                        <p>
+                            But we also bring in juries from the animation industry to analyze the films you will see.<br/>
+                            You'll have the opportunity to talk to them, but also to ask them questions about their profession, their background and more.
+                        </p>
+                    </div>
+                </div>
+      </div>          
+                <div class="informations_photos item_page">
+                    <div>
+                        <h3 class="titre_photos">Fest’In Motion in pictures</h3>
+                    </div>
+                    <!-- Ligne horizontale -->
+                    <div class="img_photos">
+                        <img  id="photos1" class="informations_img_photos" src="../images/photo1.jpg" alt="Photo Fest'In Motion 1" />
+                        <img class="informations_img_photos" src="../images/citadelle2.jpg" alt="Photo Fest'In Motion 2" />
+                        <img class="informations_img_photos" src="../images/citadelle3.jpg" alt="Photo Fest'In Motion 3" />
                     </div>
                 </div>
             </section>
@@ -152,7 +211,7 @@
             
             <div id="trait"><hr></div>          
 
-             <div id="bottom_footer">
+            <div id="bottom_footer">
                 <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
                 <div id="realisation"><p>website realized by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>

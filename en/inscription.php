@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - F.A.Q.</title>
+        <title>FEST'IN MOTION - Registration</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -52,67 +55,52 @@
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
         </header>
         
-        <section id="banniere">
+       <section id="banniere">
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // F.A.Q.</span>
+            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Registration</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
-                <h2 id="titre_faq">F.A.Q.</h2>
-                <p id="texte_p_faq">Retrouvez ci-dessous les questions pratiques à propos de nous et de notre festival.</p>
+                <h2 id="titre_inscription">Registration</h2>
+                <p id="sous_titres_inscription">Register to join us and attend the festival.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
-            <section class="item_page contenu_faq">
-                <div class="faq_question">
-                    <div id="question1" class="question">
-                        <p>La sortie est-elle définitive?</p>
-                        <button id="bouton1" class="bouton" onclick="devoileReponse(1);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton1" /></button>
+            <section class="item_page contenu_inscription">
+                <div class="formulaire_inscription">
+                    <div id="entete_formulaire">
+                        <h3>Fest'In Motion - August 7-9, 2020</h3>
                     </div>
-                    <div id="reponse1" class="reponse">
-                       <p> Les festivaliers peuvent entrer et sortir librement. En raison du plan Vigipirate, la fouille à l’entrée est obligatoire.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question2" class="question">
-                        <p>Les animaux sont-ils autorisés sur le site?</p>
-                        <button id="bouton2" class="bouton" onclick="devoileReponse(2);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton2" /></button>
-                    </div>
-                    <div id="reponse2" class="reponse">
-                      <p>  Nos amis les animaux ne sont pas admis sur l’ensemble du site et au camping, pour des raisons d’hygiène, de sécurité et pour leur propre bien-être.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question3" class="question">
-                        <p>Quels sont les objets refusés à l'entrée du festival ?</p>
-                        <button id="bouton3" class="bouton" onclick="devoileReponse(3);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton3" /></button>
-                    </div>
-                    <div id="reponse3" class="reponse">
-                    <p>   Il est strictement interdit d’introduire : Des bouteilles d’alcool et de verre, les armes et autres substances explosives, inflammables ou volatiles, tous les objets dangereux, tout article pyrotechnique, signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question4" class="question">
-                        <p>Objects trouvés/perdus ?</p>
-                        <button id="bouton4" class="bouton" onclick="devoileReponse(4);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton4" /></button>
-                    </div>
-                    <div id="reponse4" class="reponse">
-                       <p> Pour votre confort, une consigne est disponible à l’entrée du festival 24h/24, ainsi qu’un espace objets trouvés. Les objets non récupérés seront remis à la mairie après le festival. Important : les objets encombrants comme les casques de motos ne pourront pas passer le contrôle.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question5" class="question">
-                        <p>Que faire en cas de problème ?</p>
-                        <button id="bouton5" class="bouton" onclick="devoileReponse(5);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton5" /></button>
-                    </div>
-                    <div id="reponse5" class="reponse">
-                       <p> En cas de problème, avertissez l’agent de sécurité le plus proche ou la Croix Rouge pour les problèmes médicaux.
-</p>
+                    <div id="tableau_formulaire">
+                        <table>
+                            <tr class="entete_tableau">
+                                <th class="gauche">Type</th>
+                                <th> Price</th>
+                                <th>Quantity</th>       <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Children ticket (- 10 years old)</td>
+                                <td><span class="prix_tableau">10€</span>00</td>
+                                <td><button id="btn1_moins_tableau" onclick="moins1();"><img src="../images/icon_moins.png" alt="Icon moins" /></button> <span id="quantite1_tableau">0</span> <button id="btn1_plus_tableau" onclick="plus1();"><img src="../images/icon_plus.png" alt="Icon plus" /></button></td>
+                                <td class="montant"><span id="montant1_tableau">0</span>€00</td>
+                            </tr>
+                            <tr>
+                                <td class="gauche">Adult ticket</td>
+                                <td><span class="prix_tableau">15€</span>00</td>
+                                <td><button id="btn2_moins_tableau" onclick="moins2();"><img src="../images/icon_moins.png" alt="Icon moins" /></button> <span id="quantite2_tableau">0</span> <button id="btn2_plus_tableau" onclick="plus2();"><img src="../images/icon_plus.png" alt="Icon plus" /></button></td>
+                                <td class="montant"><span id="montant2_tableau">0</span>€00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <a id="lien_panier" href="panier.html">Go to cart</a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </section>

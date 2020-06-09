@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - F.A.Q.</title>
+        <title>FEST'IN MOTION - Event</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -27,7 +30,7 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Event</a>
+                   <a href="evenement.html">Event</a>
                     <a href="inscription.html">Registration</a>
                     <a href="partenaires.html">Partners</a>
                     <a href="informations.html">Information</a>
@@ -52,72 +55,120 @@
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
         </header>
         
-        <section id="banniere">
+    <section id="banniere">
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // F.A.Q.</span>
+            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Event</span>
         </section>
         
         <div id="corps_page">
-            <section class="item_page titre_entete">
-                <h2 id="titre_faq">F.A.Q.</h2>
-                <p id="texte_p_faq">Retrouvez ci-dessous les questions pratiques à propos de nous et de notre festival.</p>
+            <section class="titre_entete item_page">
+                <h2 id="titre_evenement">Event</h2>
+                <p id="texte_p_evenement">Find below the presentation of our festival</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
-            <section class="item_page contenu_faq">
-                <div class="faq_question">
-                    <div id="question1" class="question">
-                        <p>La sortie est-elle définitive?</p>
-                        <button id="bouton1" class="bouton" onclick="devoileReponse(1);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton1" /></button>
-                    </div>
-                    <div id="reponse1" class="reponse">
-                       <p> Les festivaliers peuvent entrer et sortir librement. En raison du plan Vigipirate, la fouille à l’entrée est obligatoire.</p>
-                    </div>
+            <section class="item_page contenu_evenement">
+                <div class="item_page entete_evenement">
+                    <h2>
+                        Animated film amateur international festival 2020<br/>
+                       August 7/8/9 2020 - CALAIS
+                    </h2>
+                    <p>
+                        Meet us at La Citadelle de Calais to live magical moments.
+                        <br/>
+                        Open to all, you will be able to enjoy our broadcasts, our stands, our bars and many other things. <br/>
+                        <a href="informations.html" class="savoir_plus">Learn more</a>
+                    </p>
                 </div>
-                <div class="faq_question">
-                    <div id="question2" class="question">
-                        <p>Les animaux sont-ils autorisés sur le site?</p>
-                        <button id="bouton2" class="bouton" onclick="devoileReponse(2);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton2" /></button>
+                <div class="item_page infos_evenement">
+                    <div class="presentation">
+                        <div class="photo_presentation">
+                            <img id="img_presentation" src="../images/photo_presentation.jpg" alt="Photo de Fest'In Motion" />
+                        </div>
+                        <div class="texte_presentation">
+                            <h3>
+                                A 3 days festival <br/>
+                                with 20 animated films : 
+                            </h3>
+                            <ul>
+                                <li>discover an animated universe.</li>
+                                <li>meet professionals.</li>
+                                <li>escape from reality.</li>
+                                <li>leave with stars in your eyes.</li>
+                            </ul>
+                            <!-- Ligne horizontale -->
+                            <p>
+                                A festival accessible to all, alone, with family or friends, where fiction becomes reality and where forms and drawings come to life.
+
+                            </p>
+                            <!-- Ligne horizontale -->
+                            <p class="citation">
+                                "For life to be a fairy tale, maybe you just have to believe… » <br/>
+                            </p>
+                            <span class="auteur">Walt Disney</span>
+                        </div>
                     </div>
-                    <div id="reponse2" class="reponse">
-                      <p>  Nos amis les animaux ne sont pas admis sur l’ensemble du site et au camping, pour des raisons d’hygiène, de sécurité et pour leur propre bien-être.</p>
+                    
+                    <div class="professionels">
+                        <div class="texte_professionels">
+                            <h3>
+                                Professionals in the industry, <br/>
+                                but not only.
+                            </h3>
+                            <!-- Ligne horizontale -->
+                            <p>
+                                Animation, an area of cinema sometimes sidelined, but which deserves all our attention, and for good reason: it brings all generations together, makes the eyes of the little ones shine and glues smiles on the faces of the older ones.
+                            </p>
+                            <p>
+                                We also want to give visibility to young filmmaking teams whose work deserves to be recognized, allowing them to progress and learn by exchanging and being judged by a jury of professional filmmakers.
+                            </p>
+                        </div>
+                        <div class="photo_professionels">
+                            <img id="img_professionels" src="../images/photo1.jpg" alt="Photo de Fest'In Motion" />
+                        </div>
                     </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question3" class="question">
-                        <p>Quels sont les objets refusés à l'entrée du festival ?</p>
-                        <button id="bouton3" class="bouton" onclick="devoileReponse(3);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton3" /></button>
+                    
+                    <div class="souvenir">
+                        <div class="photo_souvenir">
+                            <img id="img_souvenir" src="../images/photo2.jpg" alt="Photo de Fest'In Motion" />
+                        </div>
+                        <div class="texte_souvenir">
+                            <h3>
+                                Come with ambitions, 
+<br/>
+                                leave with stars.
+                            </h3>
+                            <!-- Ligne horizontale -->
+                            <p>
+                                Coming to Fest'In Motion is to participate in a marathon of animation for beginners and initiates. Discovering for some, improving for others, but above all sharing a moment together, in the exceptional setting of the Citadel of Calais, where we will do everything to make conviviality reign thanks to a relaxed and pleasant atmosphere.
+
+                            </p>
+                        </div>
                     </div>
-                    <div id="reponse3" class="reponse">
-                    <p>   Il est strictement interdit d’introduire : Des bouteilles d’alcool et de verre, les armes et autres substances explosives, inflammables ou volatiles, tous les objets dangereux, tout article pyrotechnique, signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question4" class="question">
-                        <p>Objects trouvés/perdus ?</p>
-                        <button id="bouton4" class="bouton" onclick="devoileReponse(4);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton4" /></button>
-                    </div>
-                    <div id="reponse4" class="reponse">
-                       <p> Pour votre confort, une consigne est disponible à l’entrée du festival 24h/24, ainsi qu’un espace objets trouvés. Les objets non récupérés seront remis à la mairie après le festival. Important : les objets encombrants comme les casques de motos ne pourront pas passer le contrôle.</p>
-                    </div>
-                </div>
-                <div class="faq_question">
-                    <div id="question5" class="question">
-                        <p>Que faire en cas de problème ?</p>
-                        <button id="bouton5" class="bouton" onclick="devoileReponse(5);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton5" /></button>
-                    </div>
-                    <div id="reponse5" class="reponse">
-                       <p> En cas de problème, avertissez l’agent de sécurité le plus proche ou la Croix Rouge pour les problèmes médicaux.
-</p>
+                    
+                    <div class="tarifs">
+                        <h3>Rates</h3>
+                        <p>
+                           Come and join us !!!
+                        </p>
+                        
+                        <div id="prix_tarifs">                           
+                            <div id="prix_adulte"><span>15</span>€00 / adults</div>
+
+                            <div id="prix_enfant"><span>10</span>€00 / children<sup>*</sup></div>
+                        </div>
+                        
+                        <a href="inscription.html" class="lien_inscription">I’m joining you</a>
+                        
+                        <span id="explication_asterisque" class="asterisque"><sup>*</sup>children under 10 years old</span>                
                     </div>
                 </div>
             </section>
         </div>
-        
         <footer>
             <div id="top_footer">
                 <div id="liens">
@@ -126,6 +177,7 @@
                         <a href="inscription.html">Registration</a>
                         <a href="partenaires.html">Partners</a>
                     </div>
+
                     <div id="bloc_liens2">
                         <a href="informations.html">Information</a>
                         <a href="galeries.html">Gallery</a>
@@ -152,7 +204,7 @@
             
             <div id="trait"><hr></div>          
 
-             <div id="bottom_footer">
+            <div id="bottom_footer">
                 <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
                 <div id="realisation"><p>website realized by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
