@@ -152,4 +152,15 @@ function panier_plus2(){
 /* FONCTION POUR IMPRIMER LES TICKETS */
 function imprimTickets(){
     console.log("Impression");
+    for(var i = 0; i < parseInt(document.getElementById('quantite1_recap').innerHTML); i++){
+        var doc = new jsPDF();
+        
+        doc.save("ticket_enfant_"+(i+1)+".pdf");
+    }
+    
+    for(var i = 0; i < parseInt(document.getElementById('quantite2_recap').innerHTML); i++){
+        var doc = new jsPDF();
+        
+        doc.save("ticket_adulte_"+(i+1)+".pdf");
+    }
 }
