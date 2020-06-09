@@ -9,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Politiques des cookies</title>
+        <title>FEST'IN MOTION - Politique des cookies</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />

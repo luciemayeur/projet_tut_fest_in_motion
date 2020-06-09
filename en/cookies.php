@@ -9,7 +9,7 @@
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Contact</title>
+        <title>FEST'IN MOTION - Cookies policy</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -61,72 +61,85 @@
             </div>
             
         
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Contact</span>
-        </section>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Cookies policy</span>
         
+        </section>
         <div id="corps_page">
-            <section class="item_page entete_contact">
-                <h2 id="titre_contact">Contact</h2>
-                <p>
-                    Do you have a request or a question? <br/>
-                    Contact us via the means available to you below.
-                </p>
+            <section class="item_page titre_entete">
+                <h2 id="titre_cookies" class="titre_reglement">Cookies policy</h2>
+                <p id="sous_titres_cookies">Through this cookie policy, the site operator informs site visitors of the use made of cookies or similar storage technologies implemented on this site.</p>
             </section>
             
             <div id="trait"><hr></div>
             <!-- Ligne horizontale -->
             
-            <section class="item_page contenu_contact">
-                <div id="infos_contact">
-                    <img class="logo" src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion"/>
-                    <p id="telephone_contact" class="element_contact">
-                        <strong>Phone :</strong> <a href="tel:+33123456789">01.23.45.67.89</a>
+            <section class="item_page contenu_cookies">
+                <div id="infos_cookies">
+                    <h3 class="titre_paragraphe">1. What are cookies ?</h3>
+                    <p>
+                        Cookies are small text files that are stored by your browser on your computer or mobile device to save certain information or image files, such as pixels. The next time you visit our website on the same device, the information stored in cookies will be transmitted accordingly either to our website ("first party cookie"), or to another website to which the cookie belongs (" third party cookie ").
                     </p>
-                    <p id="mail_contact" class="element_contact">
-                        <strong>Mail :</strong> <a href="mailto:festinmotion@laposte.net">festinmotion@laposte.net</a>
+                    <p>
+                        Thanks to this exchange of information recorded during your various visits to the website in question, it recognizes that you are using the same browsers and device. We use this information to be able to design and display the website optimally and according to your preferences.
                     </p>
-                    <p id="adresse_contact" class="element_contact">
-                        <strong>Address :</strong><br/>
-                           Université, SP<br/>
-                           16 Rue de l'Université<br/>
-                           62307 Lens
+                    <p>
+                        As a result, only the cookie itself is identified on your device. Your personal data will be saved only with your express consent or if this is strictly necessary to be able to use the service offered to you and therefore to which you have access.
                     </p>
                 </div>
-                <div id="formulaire_contact">
-                    <form>
-                        <div class="element_formulaire">
-                            <label for="civilite"><strong>Civility</strong> <sup>*</sup></label><br/>
-                            <select name="civilite" id="civilite" required>
-                                <option value>Civility</option>
-                                <option value="mr">Mr</option>
-                                <option value="mme">Mme</option>
-                                <option value="mlle">Mlle</option>
-                            </select>
-                        </div>
-                        <div class="element_formulaire">
-                            <label for="prenom"><strong>First name</strong> <sup>*</sup></label><br/>
-                            <input type="text" name="prenom" id="prenom" required />
-                        </div>
-                        <div class="element_formulaire">
-                            <label for="nom"><strong>Last name</strong> <sup>*</sup></label><br/>
-                            <input type="text" name="nom" id="nom" required />
-                        </div>
-                        <div class="element_formulaire">
-                            <label for="mail"><strong>E-mail</strong> <sup>*</sup></label><br/>
-                            <input type="email" name="mail" id="mail" required />
-                        </div>
-                        <div class="element_formulaire">
-                            <label for="sujet"><strong>Subject</strong></label><br/>
-                            <input type="text" name="sujet" id="sujet" />
-                        </div>
-                        <div class="element_formulaire">
-                            <label for="message"><strong>Message</strong> <sup>*</sup></label><br/>
-                            <textarea name="message" id="message" required></textarea>
-                        </div>
-                        <div class="element_formulaire">
-                            <button id="envoie" onclick="sendMailJS();">SEND</button>
-                        </div>
-                    </form>
+                
+                <div id="utilisation_cookies">
+                    <h3 class="titre_paragraphe">2. Consent to the use of cookies :</h3>
+                    <p>
+                        The Site uses 3 categories of cookies, the purposes of which are described below. No cookie is used to collect nominative information (like the name of the User for example).
+                    </p>
+                    
+                    <div id="utilisation_cookies_1">
+                        <h4 class="sous_titre_paragraphe">1. Functionality cookies</h4>
+                        <p>
+                            These cookies are not essential for navigation on the Site, but allow to optimize the functioning of the Site and to offer a smooth and tailor-made navigation.<br/>
+                            In this case, the Publisher uses a single cookie of this type. This is the session cookie. Its lifespan is equal to the time of the User session. This time is limited to 1 hour in the event of inactivity and a maximum of 24 hours.
+                        </p>
+                    </div>
+                    
+                    <div id="utilisation_cookies_2">
+                        <h4 class="sous_titre_paragraphe">2. Audience measurement cookies (statistics)</h4>
+                        <p>
+                            These cookies collect information about how visitors use a website. For example, the number of visits, the most visited pages ...<br/>
+                            The statistical data obtained is not passed on to third parties or used for other purposes.
+                        </p>
+                    </div>
+                    
+                    <div id="utilisation_cookies_3">
+                        <h4 class="sous_titre_paragraphe">3. Sharing cookies (social links)</h4>
+                        <p>
+                            The Site contains sharing links to Facebook, Twitter and other similar social networks, which allow you to share content from the Site with other people. When the User uses these sharing buttons, a third-party cookie is installed. If the User is connected to the social network while browsing the Site, the sharing buttons allow the content consulted to be linked to the user account.
+                        </p>
+                    </div>
+                    
+                    <div id="utilisation_cookies_4">
+                        <h4 class="sous_titre_paragraphe">4. Advertising cookies</h4>
+                        <p>
+                            These cookies collect information about your Internet browsing habits in order to provide you with advertisements that are tailored to you and correspond to your areas of interest. They also limit the number of times you will see an advertisement and help us assess the effectiveness of our advertising campaigns. They are usually installed by ad networks with the permission of the website operator. They record visits to a site and share this information with other companies (advertisers, for example). Targeted or advertising cookies are often linked to the functionality of the site provided by the partner company.
+                        </p>
+                    </div>
+                    
+                    <p>
+                        Information is collected and shared with third parties to provide audience targeting and optimization solutions for advertisers and publishers. No personal data is collected and an individual cannot be identified via the data collected.
+                    </p>
+                </div>
+                
+                <div id="parametrage_cookies">
+                    <h3 class="titre_paragraphe">3. Management and configuration of cookies :</h3>
+                    <p>
+                        Several possibilities are offered to the User to manage cookies. However, it is specified that any setting made by the User is likely to modify Internet browsing and the conditions of access to certain services requiring the use of cookies.
+                    </p>
+                </div>
+                
+                <div id="desactivation_cookies">
+                    <h3 class="titre_paragraphe">4. Deactivation and deletion of all cookies :</h3>
+                    <p>
+                        It is possible to configure your browser to prevent the use and storage of cookies on your device and / or that you are asked each time you visit a site to activate cookies. You can also delete cookies that have been reactivated at any time.
+                    </p>
                 </div>
             </section>
         </div>
