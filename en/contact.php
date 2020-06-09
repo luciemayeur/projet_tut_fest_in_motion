@@ -2,7 +2,7 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
@@ -30,11 +30,11 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.php">Événement</a>
-                    <a href="inscription.php">Inscription</a>
-                    <a href="partenaires.php">Partenaires</a>
-                    <a href="informations.php">Informations</a>
-                    <a href="galeries.php">Galerie</a>
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
+                    <a href="informations.php">Information</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -48,8 +48,8 @@
                 </div>
 
                 <div id="langues">
-                    <button id="french" class="active" onclick="switchFR();">FR</button>
-                    <button id="english" onclick="switchEN();">EN</button>
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -61,15 +61,15 @@
             </div>
             
         
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Contact</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Contact</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page entete_contact">
                 <h2 id="titre_contact">Contact</h2>
                 <p>
-                    Vous avez une demande, un question ?<br/>
-                    Prenez contact avec nous via les moyens mis à votre disposion ci-dessous.
+                    Do you have a request or a question? <br/>
+                    Contact us via the means available to you below.
                 </p>
             </section>
             
@@ -80,13 +80,13 @@
                 <div id="infos_contact">
                     <img class="logo" src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion"/>
                     <p id="telephone_contact" class="element_contact">
-                        <strong>Téléphone :</strong> <a href="tel:+33123456789">01.23.45.67.89</a>
+                        <strong>Phone :</strong> <a href="tel:+33123456789">01.23.45.67.89</a>
                     </p>
                     <p id="mail_contact" class="element_contact">
                         <strong>Mail :</strong> <a href="mailto:festinmotion@laposte.net">festinmotion@laposte.net</a>
                     </p>
                     <p id="adresse_contact" class="element_contact">
-                        <strong>Adresse :</strong><br/>
+                        <strong>Address :</strong><br/>
                            Université, SP<br/>
                            16 Rue de l'Université<br/>
                            62307 Lens
@@ -95,28 +95,28 @@
                 <div id="formulaire_contact">
                     <form>
                         <div class="element_formulaire">
-                            <label for="civilite"><strong>Civilité</strong> <sup>*</sup></label><br/>
+                            <label for="civilite"><strong>Civility</strong> <sup>*</sup></label><br/>
                             <select name="civilite" id="civilite" required>
-                                <option value>Civilité</option>
-                                <option value="mr">Monsieur</option>
-                                <option value="mme">Madame</option>
-                                <option value="mlle">Mademoiselle</option>
+                                <option value>Civility</option>
+                                <option value="mr">Mr</option>
+                                <option value="mme">Mme</option>
+                                <option value="mlle">Mlle</option>
                             </select>
                         </div>
                         <div class="element_formulaire">
-                            <label for="prenom"><strong>Prénom</strong> <sup>*</sup></label><br/>
+                            <label for="prenom"><strong>First name</strong> <sup>*</sup></label><br/>
                             <input type="text" name="prenom" id="prenom" required />
                         </div>
                         <div class="element_formulaire">
-                            <label for="nom"><strong>Nom</strong> <sup>*</sup></label><br/>
+                            <label for="nom"><strong>Last name</strong> <sup>*</sup></label><br/>
                             <input type="text" name="nom" id="nom" required />
                         </div>
                         <div class="element_formulaire">
-                            <label for="mail"><strong>Email</strong> <sup>*</sup></label><br/>
+                            <label for="mail"><strong>E-mail</strong> <sup>*</sup></label><br/>
                             <input type="email" name="mail" id="mail" required />
                         </div>
                         <div class="element_formulaire">
-                            <label for="sujet"><strong>Sujet</strong></label><br/>
+                            <label for="sujet"><strong>Subject</strong></label><br/>
                             <input type="text" name="sujet" id="sujet" />
                         </div>
                         <div class="element_formulaire">
@@ -124,7 +124,7 @@
                             <textarea name="message" id="message" required></textarea>
                         </div>
                         <div class="element_formulaire">
-                            <button id="envoie" onclick="sendMailJS();">ENVOYER</button>
+                            <button id="envoie" onclick="sendMailJS();">SEND</button>
                         </div>
                     </form>
                 </div>
@@ -135,13 +135,13 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.php">Événement</a>
-                        <a href="inscription.php">Inscription</a>
-                        <a href="partenaires.php">Partenaires</a>
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.php">Informations</a>
-                        <a href="galeries.php">Galerie</a>
+                        <a href="informations.php">Information</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
@@ -166,11 +166,11 @@
             <div id="trait"><hr></div>          
 
             <div id="bottom_footer">
-                <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
             </div>
         </footer>
         
