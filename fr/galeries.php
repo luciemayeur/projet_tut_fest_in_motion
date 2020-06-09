@@ -175,11 +175,11 @@
                                 Fest'In Motion
                             </p>
                             <div class="lien_download">
-                                <a href="../documents/fr/note.txt"><img class="icon_download" src="../images/fullscreen.png" alt="Icon aperçu" /></a>
+                                <a href="../documents/fr/communique.pdf"><img class="icon_download" src="../images/fullscreen.png" alt="Icon aperçu" /></a>
                             </div>
                         </div>
                         
-                        <a href="../documents/fr/communique.pdf" id="lien_telechargement_presse" download="communique_de_presse.pdf">Télécharger le <br/>communiqué</a>
+                        <a href="../documents/fr/dossier_de_presse.pdf" id="lien_telechargement_presse" download="communique_de_presse.pdf">Télécharger le <br/>dossier</a>
                     </div>
                    
                 </div>
