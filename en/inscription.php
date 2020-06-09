@@ -2,14 +2,14 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Site officiel du festival Fest'In Motion" />
         <meta name="keywords" content="Fest'In Motion, Festival, Animation, Dessin animé, Événement, Extérieur, Art, Cinéma, Dessin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>FEST'IN MOTION - Inscription</title>
+        <title>FEST'IN MOTION - Registration</title>
         <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
         
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
@@ -30,11 +30,11 @@
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.php">Événement</a>
-                    <a href="inscription.php">Inscription</a>
-                    <a href="partenaires.php">Partenaires</a>
+                    <a href="evenement.php">Event</a>
+                    <a href="inscription.php">Registration</a>
+                    <a href="partenaires.php">Partners</a>
                     <a href="informations.php">Informations</a>
-                    <a href="galeries.php">Galerie</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -48,8 +48,8 @@
                 </div>
 
                 <div id="langues">
-                    <button id="french" class="active" onclick="switchFR();">FR</button>
-                    <button id="english" onclick="switchEN();">EN</button>
+                    <button id="french" onclick="switchFR();">FR</button>
+                    <button id="english" class="active" onclick="switchEN();">EN</button>
                 </div>
             </div>
             <button id="icon_menu_ouvert" onclick="deroule_menu();"><img src="../images/icon_menu_ouvert.png" alt="Icône menu déroulant" /></button>
@@ -59,13 +59,13 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Inscription</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Home</a> // Registration</span>
         </section>
         
         <div id="corps_page">
             <section class="item_page titre_entete">
-                <h2 id="titre_inscription">Inscription</h2>
-                <p id="sous_titres_inscription">Inscrivez-vous pour nous rejoindre et assister au festival.</p>
+                <h2 id="titre_inscription">Registration</h2>
+                <p id="sous_titres_inscription">Register to join us and attend the festival.</p>
             </section>
             
             <div id="trait"><hr></div>
@@ -74,25 +74,25 @@
             <section class="item_page contenu_inscription">
                 <div class="formulaire_inscription">
                     <div id="entete_formulaire">
-                        <h3>Fest'In Motion - Du 7 au 9 août 2020</h3>
+                        <h3>Fest'In Motion - August 7-9, 2020</h3>
                     </div>
                     <div id="tableau_formulaire">
                         <form action="panier.php" method="post">
                         <table>
                             <tr class="entete_tableau">
                                 <th class="gauche">Type</th>
-                                <th>Prix</th>
-                                <th>Quantité</th>
-                                <th>Montant</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
                             </tr>
                             <tr>
-                                <td class="gauche">Entrée Enfant (-10 ans)</td>
+                                <td class="gauche">Child Entrance (-10 years old)</td>
                                 <td><span class="prix_tableau">10€</span>00</td>
                                 <td><img id="btn1_moins_tableau" onclick="moins1();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite1_tableau" name="quantite_enfant" value="0" readonly /> <img id="btn1_plus_tableau" onclick="plus1();" src="../images/icon_plus.png" alt="Icon plus" /></td>
                                 <td class="montant"><input type="text" id="montant1_tableau" name="montant_enfant" value="0" readonly />€00</td>
                             </tr>
                             <tr>
-                                <td class="gauche">Entrée Adulte</td>
+                                <td class="gauche">Adult Entrance</td>
                                 <td><span class="prix_tableau">15€</span>00</td>
                                 <td><img id="btn2_moins_tableau" onclick="moins2();" src="../images/icon_moins.png" alt="Icon moins" /> <input type="text" id="quantite2_tableau" name="quantite_adulte" value="0" readonly /> <img id="btn2_plus_tableau" onclick="plus2();" src="../images/icon_plus.png" alt="Icon plus" /></td>
                                 <td class="montant"><input type="text" id="montant2_tableau" name="montant_adulte" value="0" readonly />€00</td>
@@ -113,13 +113,13 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.php">Événement</a>
-                        <a href="inscription.php">Inscription</a>
-                        <a href="partenaires.php">Partenaires</a>
+                        <a href="evenement.php">Event</a>
+                        <a href="inscription.php">Registration</a>
+                        <a href="partenaires.php">Partners</a>
                     </div>
                     <div id="bloc_liens2">
                         <a href="informations.php">Informations</a>
-                        <a href="galeries.php">Galerie</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
@@ -144,11 +144,11 @@
             <div id="trait"><hr></div>          
 
             <div id="bottom_footer">
-                <div id="droits">© 2020 Fest'In Motion - Tous droits réservés</div>
+                <div id="droits">© 2020 Fest'In Motion - All rights reserved</div>
                 
-                <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
+                <div id="realisation"><p>Website created by </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politique de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Legal notices</a> | <a href="confidentialite.php">Privacy policy</a> | <a href="cookies.php">Cookies policy</a><br/>| <a href="ventes.php">Terms of sale</a> | <a href="contact.php">Contact us</a></p></div>
             </div>
         </footer>
         
