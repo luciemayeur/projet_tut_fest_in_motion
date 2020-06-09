@@ -176,7 +176,7 @@
                         </p>
                     </div>
                     <div class="img_programme">
-                        <img src="../images/photo6.jpg" alt="Photo citadelle" />
+                        <img src="../images/photo2.jpg" alt="Photo citadelle" />
                     </div>
                 </div>
       </div>          
