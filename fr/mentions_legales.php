@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,18 +25,18 @@
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +44,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -56,7 +59,7 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Mentions légales</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Mentions légales</span>
         </section>
         
         <div id="corps_page">
@@ -87,8 +90,8 @@
                         Le responsable de la publication est une <em>personne physique</em>
                     </p>
                     <p>
-                        Contacter le responsable du site : <em><a href="mailto:festinmotion@gmail.com?subject=Contact à partir des mentions légales via le site festinmotion.000webhostapp.com/">festinmotion@gmail.com</a></em><br/>
-                        Appeler le responsable du site : <em>03.21.79.32.32</em>
+                        Contacter le responsable du site : <em><a href="mailto:festinmotion@laposte.net?subject=Contact à partir des mentions légales via le site festinmotion.000webhostapp.com/">festinmotion@laposte.net</a></em><br/>
+                        Appeler le responsable du site : <em>01.23.45.67.89</em>
                     </p>
                     <p>
                         Les Webmasters sont : <em>Lucie Mayeur</em> et <em>Valentin Vanhaecke</em><br/>
@@ -126,9 +129,9 @@
                 <div id="hypertextes_cookies">
                     <h3 class="titre_paragraphe">5. Liens hypertextes et cookies :</h3>
                     <p>
-                        Le site festinmotion.000webhostapp.com/ contient un certain nombre de liens hypertextes vers d’autres sites (partenaires, informations …) mis en place avec l’autorisation de Hervelyne Vasse. Cependant, Hervelyne Vasse n’a pas la possibilité de vérifier l'ensemble du contenu des sites ainsi visités et décline donc toute responsabilité de ce fait quand aux risques éventuels de contenus illicites.<br/>
+                        Le site festinmotion.000webhostapp.com/ contient un certain nombre de liens hypertextes vers d’autres sites (partenaires, informations …) mis en place avec l’autorisation de Hervelyne Vasse. Cependant, Hervelyne Vasse n’a pas la possibilité de vérifier l'ensemble du contenu des sites ainsi visités et décline donc toute responsabilité de ce fait quant aux risques éventuels de contenus illicites.<br/>
                         L’utilisateur est informé que lors de ses visites sur le site festinmotion.000webhostapp.com/, un ou des cookies sont susceptibles de s’installer automatiquement sur son ordinateur par l'intermédiaire de son logiciel de navigation. Un cookie est un bloc de données qui ne permet pas d'identifier l'utilisateur, mais qui enregistre des informations relatives à la navigation de celui-ci sur le site.<br/>
-                        Le paramétrage du logiciel de navigation permet d’informer de la présence de cookie et éventuellement, de la refuser de la manière décrite à l’adresse suivante : <a href="https://www.cnil.fr/">www.cnil.fr</a>. L’utilisateur peut toutefois configurer le navigateur de son ordinateur pour refuser l’installation des cookies, sachant que le refus d'installation d'un cookie peut entraîner l’impossibilité d’accéder à certains services. Pour tout bloquage des cookies, tapez dans votre moteur de recherche : bloquage des cookies sous IE ou firefox et suivez les instructions en fonction de votre version.
+                        Le paramétrage du logiciel de navigation permet d’informer de la présence de cookie et éventuellement, de la refuser de la manière décrite à l’adresse suivante : <a href="https://www.cnil.fr/">www.cnil.fr</a>. L’utilisateur peut toutefois configurer le navigateur de son ordinateur pour refuser l’installation des cookies, sachant que le refus d'installation d'un cookie peut entraîner l’impossibilité d’accéder à certains services. Pour tout blocage des cookies, tapez dans votre moteur de recherche : blocage des cookies sous IE ou Firefox et suivez les instructions en fonction de votre version.
                     </p>
                 </div>  
                 
@@ -137,7 +140,7 @@
                     <p>
                         En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive Européenne du 24 octobre 1995.<br/>
                         Sur le site festinmotion.000webhostapp.com/, Hervelyne Vasse ne collecte des informations personnelles ( suivant l'article 4 loi n°78-17 du 06 janvier 1978) relatives à l'utilisateur que pour le besoin de certains services proposés par le site festinmotion.000webhostapp.com/. L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site festinmotion.000webhostapp.com/ l’obligation ou non de fournir ces informations.<br/>
-                        Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit d’accès, de rectification, de suppression et d’opposition aux données personnelles le concernant. Pour l’exercer, adressez votre demande à festinmotion.000webhostapp.com/ par email : <em><a href="mailto:hervelynev@gmail.com?subject=Contact à partir des mentions légales via le site festinmotion.000webhostapp.com/">hervelynev@gmail.com</a></em> ou par écrit dûment signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.
+                        Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit d’accès, de rectification, de suppression et d’opposition aux données personnelles le concernant. Pour l’exercer, adressez votre demande à festinmotion.000webhostapp.com/ par e-mail : <em><a href="mailto:hervelynev@gmail.com?subject=Contact à partir des mentions légales via le site festinmotion.000webhostapp.com/">hervelynev@gmail.com</a></em> ou par écrit dûment signé, accompagné d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.
                     </p>
                 </div>
                 
@@ -156,17 +159,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -191,7 +194,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

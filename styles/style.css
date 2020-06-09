@@ -1437,19 +1437,26 @@ footer #reglements a{
     top: 50px;
 }
 
-#btn1_moins_tableau img{
+#tableau_formulaire table #quantite1_tableau, #tableau_formulaire table #quantite2_tableau{
+    border: none;
+    background-color: #FFFFFF;
+    text-align: center;
     width: 30px;
 }
 
-#btn2_moins_tableau img{
+#btn1_moins_tableau{
     width: 30px;
 }
 
-#btn1_plus_tableau img{
+#btn2_moins_tableau{
     width: 30px;
 }
 
-#btn2_plus_tableau img{
+#btn1_plus_tableau{
+    width: 30px;
+}
+
+#btn2_plus_tableau{
     width: 30px;
 }
 
@@ -1472,6 +1479,7 @@ td[colspan=4]{
     background-color: #6592B4;
     text-decoration: none;
     padding: 15px;
+    border: none;
     border-radius: 50px;
     margin-top: 50px;
     position: absolute;
@@ -1481,10 +1489,18 @@ td[colspan=4]{
 
 #montant1_tableau{
     font-size: 30px;
+    border: none;
+    background-color: white;
+    width: 60px;
+    text-align: right;
 }
 
 #montant2_tableau{
-font-size: 30px;
+    font-size: 30px;
+    border: none;
+    background-color: white;
+    width: 60px;
+    text-align: right;
 }
 
 .prix_tableau{
@@ -1649,10 +1665,11 @@ th:last-child{
 }
 
 #lien_paiement{
-     color: white;
+    color: white;
     background-color: #6592B4;
     text-decoration: none;
     padding: 15px;
+    border: none;
     border-radius: 50px;
     font-size: 30px;
     top: 70px;

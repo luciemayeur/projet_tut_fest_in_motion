@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,18 +25,18 @@
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +44,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -56,7 +59,7 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // F.A.Q.</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // F.A.Q.</span>
         </section>
         
         <div id="corps_page">
@@ -75,7 +78,7 @@
                         <button id="bouton1" class="bouton" onclick="devoileReponse(1);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton1" /></button>
                     </div>
                     <div id="reponse1" class="reponse">
-                       <p> Les festivaliers peuvent entrer et sortir librement. En raison du plan Vigipirate, la fouille à l’entrée est obligatoire.</p>
+                       <p>Les festivaliers peuvent entrer et sortir librement. En raison du plan Vigipirate, la fouille à l’entrée est obligatoire.</p>
                     </div>
                 </div>
                 <div class="faq_question">
@@ -84,7 +87,7 @@
                         <button id="bouton2" class="bouton" onclick="devoileReponse(2);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton2" /></button>
                     </div>
                     <div id="reponse2" class="reponse">
-                      <p>  Nos amis les animaux ne sont pas admis sur l’ensemble du site et au camping, pour des raisons d’hygiène, de sécurité et pour leur propre bien-être.</p>
+                      <p>Nos amis les animaux ne sont pas admis sur l’ensemble du site et au camping, pour des raisons d’hygiène, de sécurité et pour leur propre bien-être.</p>
                     </div>
                 </div>
                 <div class="faq_question">
@@ -93,7 +96,7 @@
                         <button id="bouton3" class="bouton" onclick="devoileReponse(3);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton3" /></button>
                     </div>
                     <div id="reponse3" class="reponse">
-                    <p>   Il est strictement interdit d’introduire : Des bouteilles d’alcool et de verre, les armes et autres substances explosives, inflammables ou volatiles, tous les objets dangereux, tout article pyrotechnique, signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.</p>
+                        <p>Il est strictement interdit d’introduire : Des bouteilles d’alcool et de verre, les armes et autres substances explosives, inflammables ou volatiles, tous les objets dangereux, tout article pyrotechnique, signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.</p>
                     </div>
                 </div>
                 <div class="faq_question">
@@ -102,7 +105,7 @@
                         <button id="bouton4" class="bouton" onclick="devoileReponse(4);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton4" /></button>
                     </div>
                     <div id="reponse4" class="reponse">
-                       <p> Pour votre confort, une consigne est disponible à l’entrée du festival 24h/24, ainsi qu’un espace objets trouvés. Les objets non récupérés seront remis à la mairie après le festival. Important : les objets encombrants comme les casques de motos ne pourront pas passer le contrôle.</p>
+                       <p>Pour votre confort, une consigne est disponible à l’entrée du festival 24h/24, ainsi qu’un espace objets trouvés. Les objets non récupérés seront remis à la mairie après le festival. Important : les objets encombrants comme les casques de motos ne pourront pas passer le contrôle.</p>
                     </div>
                 </div>
                 <div class="faq_question">
@@ -111,8 +114,7 @@
                         <button id="bouton5" class="bouton" onclick="devoileReponse(5);"><img src="../images/arrow_left.png" alt="Flêche vers la gauche" id="img_bouton5" /></button>
                     </div>
                     <div id="reponse5" class="reponse">
-                       <p> En cas de problème, avertissez l’agent de sécurité le plus proche ou la Croix Rouge pour les problèmes médicaux.
-</p>
+                       <p>En cas de problème, avertissez l’agent de sécurité le plus proche ou la Croix Rouge pour les problèmes médicaux.</p>
                     </div>
                 </div>
             </section>
@@ -122,17 +124,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -157,7 +159,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

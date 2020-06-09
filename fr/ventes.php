@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,18 +25,18 @@
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +44,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -56,7 +59,7 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Conditions générales de vente</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Conditions générales de vente</span>
         </section>
         
         <div id="corps_page">
@@ -76,7 +79,7 @@
                         Siège social Avenue Pierre de Coubertin, 62100 Calais ;
                     </p>
                     <p>
-                        N° de téléphone 03.21.79.32.32 ; Adresse du courrier électronique festinmotion@gmail.com<br/>
+                        N° de téléphone 01.23.45.67.89 ; Adresse du courrier électronique festinmotion@laposte.net<br/>
                         RCS Dunkerque n° J 322 159 951
                     </p>
                     <p>
@@ -120,7 +123,7 @@
                     <h3 class="titre_article_vente">Article 3 - Commandes</h3>
                     <p>
                         Vous pouvez passer commande :<br/>
-                        <span class="possibilite_vente item_list">Sur Internet : <a href="inscription.html">festinmotion.000webhostapp.com/fr/inscription/</a></span><br/>
+                        <span class="possibilite_vente item_list">Sur Internet : <a href="inscription.php">festinmotion.000webhostapp.com/fr/inscription/</a></span><br/>
                         <span class="possibilite_vente item_list">Par téléphone au tarif de 0.10 € TTC / min du lundi au samedi de 07h00 à 21h.</span>
                     </p>
                     <p>
@@ -133,7 +136,7 @@
                 <div id="vente_article4">
                     <h3 class="titre_article_vente">Article 4 - Validation de votre commande</h3>
                     <p>
-                        Toute commande figurant sur le site Internet <a href="index.html">festinmotion.000webhostapp.com/fr/</a> suppose l'adhésion aux présentes Conditions Générales. Toute confirmation de commande entraîne votre adhésion pleine et entière aux présentes conditions générales de vente, sans exception ni réserve.  
+                        Toute commande figurant sur le site Internet <a href="index.php">festinmotion.000webhostapp.com/fr/</a> suppose l'adhésion aux présentes Conditions Générales. Toute confirmation de commande entraîne votre adhésion pleine et entière aux présentes conditions générales de vente, sans exception ni réserve.  
                     </p>
                     <p>
                         L'ensemble des données fournies et la confirmation enregistrée vaudront preuve de la transaction.
@@ -193,11 +196,11 @@
                 <div id="vente_article7">
                     <h3 class="titre_article_vente">Article 7 - Disponibilité</h3>
                     <p>
-                        Nos produits sont proposés tant qu'ils sont visibles sur le site <a href="index.html">festinmotion.000webhostapp.com/fr/</a> et dans la limite des stocks disponibles. Pour les produits non stockés, nos offres sont valables sous réserve de disponibilité chez nos fournisseurs.<br/>
+                        Nos produits sont proposés tant qu'ils sont visibles sur le site <a href="index.php">festinmotion.000webhostapp.com/fr/</a> et dans la limite des stocks disponibles. Pour les produits non stockés, nos offres sont valables sous réserve de disponibilité chez nos fournisseurs.<br/>
                         En cas d'indisponibilité de produit après passation de votre commande, nous vous en informerons par mail. Votre commande sera automatiquement annulée et aucun débit bancaire ne sera effectué.
                     </p>
                     <p>
-                        En outre, le site Internet <a href="index.html">festinmotion.000webhostapp.com/fr/</a> n'a pas vocation à vendre ses produits en quantités importantes. Par conséquent la société publique Fest'In Motion se réserve le droit de refuser les commandes de 8 articles identiques.
+                        En outre, le site Internet <a href="index.php">festinmotion.000webhostapp.com/fr/</a> n'a pas vocation à vendre ses produits en quantités importantes. Par conséquent la société publique Fest'In Motion se réserve le droit de refuser les commandes de 8 articles identiques.
                     </p>
                 </div>
                 <div id="vente_article8">
@@ -212,7 +215,7 @@
                         Conformément aux dispositions légales, en cas de retard de livraison, vous bénéficiez de la possibilité d'annuler la commande dans les conditions et modalités définies à l'article L 138-2 du Code de la Consommation. Si entre temps vous recevez le produit nous procéderons à son remboursement et aux frais d'acheminement dans les conditions de l'article L 138-3 du Code de la Consommation.
                     </p>
                     <p>
-                        En cas de livraisons par une transporteur, la société publique Fest'In Motion ne peut être tenue pour responsable de retard de livraison dû exclusivement à une indisponibilité du client après plusieurs propositions de rendez-vous.
+                        En cas de livraisons par un transporteur, la société publique Fest'In Motion ne peut être tenue pour responsable de retard de livraison dû exclusivement à une indisponibilité du client après plusieurs propositions de rendez-vous.
                     </p>
                 </div>
                 <div id="vente_article9">
@@ -251,7 +254,7 @@
                 <div id="vente_article12">
                     <h3 class="titre_article_vente">Article 12 - Propriété intellectuelle</h3>
                     <p>
-                        Tous les éléments du site <a href="index.html">festinmotion.000webhostapp.com/fr/</a> sont et restent la propriété intellectuelle et exclusive de la société publique Fest'In Motion. Nul n'est autorisé à reproduire, exploiter, rediffuser, ou utiliser à quelque titre que ce soit, même partiellement, des éléments du site qu'ils soient logiciels, visuels ou sonores. Tout lien simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société publique Fest'In Motion.
+                        Tous les éléments du site <a href="index.php">festinmotion.000webhostapp.com/fr/</a> sont et restent la propriété intellectuelle et exclusive de la société publique Fest'In Motion. Nul n'est autorisé à reproduire, exploiter, rediffuser, ou utiliser à quelques titres que ce soit, même partiellement, des éléments du site qu'ils soient logiciels, visuels ou sonores. Tout lien simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société publique Fest'In Motion.
                     </p>
                 </div>
                 <div id="vente_article13">
@@ -285,17 +288,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -320,7 +323,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         

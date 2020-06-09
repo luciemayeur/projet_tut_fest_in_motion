@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!empty($_POST) && count($_POST) >= 2){
+        foreach($_POST as $key => $value){
+            $_SESSION[$key] = $value;
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -18,22 +27,24 @@
         <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
         
         <script src="../scripts/script.js" type="text/javascript"></script>
+        <script src="../librairies/jspdf.js" type="text/javascript"></script>
+        <script src="../librairies/jspdf.debug.js" type="text/javascript"></script>
     </head>
     
     <body>
         <header>
-            <a id="logo" href="index.html"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
+            <a id="logo" href="index.php"><img src="../images/logo_festinmotion.png" alt="Logo de Fest'In Motion" /></a>
             
             <div id="menu_deroulant">
                 <button id="icon_menu_ferme" onclick="cache_menu();"><img src="../images/icon_menu_ferme.png" alt="Icône menu déroulant" /></button>
                 <nav id="menu">
-                    <a href="evenement.html">Événement</a>
-                    <a href="inscription.html">Inscription</a>
-                    <a href="partenaires.html">Partenaires</a>
-                    <a href="informations.html">Informations</a>
-                    <a href="galeries.html">Galerie</a>
-                    <a href="faq.html">F.A.Q.</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="evenement.php">Événement</a>
+                    <a href="inscription.php">Inscription</a>
+                    <a href="partenaires.php">Partenaires</a>
+                    <a href="informations.php">Informations</a>
+                    <a href="galeries.php">Galerie</a>
+                    <a href="faq.php">F.A.Q.</a>
+                    <a href="contact.php">Contact</a>
                 </nav>
 
                 <div id="reseaux_sociaux">
@@ -41,7 +52,7 @@
                     <a href="https://www.instagram.com/festinmotion/"><img src="../images/icon_instagram.png" alt="Lien Instagram"></a>
                     <a href="https://twitter.com/FestMotion"><img src="../images/icon_twitter.png" alt="Lien Twitter"></a>
                     <a href="https://www.youtube.com/channel/UCcgmiDp9LxrktaljhuOzh9Q"><img src="../images/icon_youtube.png" alt="Lien Youtube"></a>
-                    <a href="panier.html"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
+                    <a href="panier.php"><img src="../images/icon_panier.png" alt="Lien Panier"></a>
                 </div>
 
                 <div id="langues">
@@ -56,7 +67,7 @@
             <div id="photos_banniere">
                 <img src="../images/banniere.jpg" alt="Image banniere"  class="photo_baniere" />
             </div>
-            <span id="chemin" class="item_page"><a href="index.html"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Panier</span>
+            <span id="chemin" class="item_page"><a href="index.php"><img src="../images/home.png" alt="Icône accueil" id="icon_accueil"/> Accueil</a> // Panier</span>
         </section>
         
         <div id="corps_page">
@@ -86,7 +97,13 @@
                             <p><button id="moins1" onclick="panier_moins1();"><img src="../images/icon_moins.png" alt="Icône moins" />
                             </button><button id="plus1" onclick="panier_plus1();"><img src="../images/icon_plus.png" alt="Icône plus" /></button></p>                         
                              <p class="quantite">
-                            <strong>Quantité :</strong> <span id="quantite1">0</span></p>
+                            <strong>Quantité :</strong> <span id="quantite1">      <?php
+                                    if(!empty($_SESSION) && count($_SESSION) >= 2){
+                                        echo $_SESSION["quantite_enfant"];
+                                    }else{
+                                        echo "0";
+                                    }
+                                 ?></span></p>
                             
                         
                             </div>   
@@ -99,7 +116,14 @@
                         </div>
                         <div class="reglage_quantite">
                             <p><button id="moins2" onclick="panier_moins2();"><img src="../images/icon_moins.png" alt="Icône moins" /></button><button id="plus2" onclick="panier_plus2();"><img src="../images/icon_plus.png" alt="Icône plus" /></button></p>
-                            <p class="quantite"><strong>Quantité :</strong> <span id="quantite2">0</span></p>
+                            <p class="quantite"><strong>Quantité :</strong> <span id="quantite2">
+                                <?php
+                                    if(!empty($_SESSION) && count($_SESSION) >= 2){
+                                        echo $_SESSION["quantite_adulte"];
+                                    }else{
+                                        echo "0";
+                                    }
+                                 ?></span></p>
                         </div>
                     </div>
                     
@@ -113,17 +137,36 @@
                     <div id='traitgris'><hr></div>
                     <!-- Ligne horizontale -->
                     
-                    <p>Entrée Enfant ...................... <span id="quantite1_recap">0</span></p>
-                    <p>Entrée Adulte ...................... <span id="quantite2_recap">0</span></p>
+                    <p>Entrée Enfant ...................... <span id="quantite1_recap"><?php
+                                    if(!empty($_SESSION) && count($_SESSION) >= 2){
+                                        echo $_SESSION["quantite_enfant"];
+                                    }else{
+                                        echo "0";
+                                    }
+                                 ?></span></p>
+                    <p>Entrée Adulte ...................... <span id="quantite2_recap"><?php
+                                    if(!empty($_SESSION) && count($_SESSION) >= 2){
+                                        echo $_SESSION["quantite_adulte"];
+                                    }else{
+                                        echo "0";
+                                    }
+                                 ?></span></p>
                     
                     <div class="total_paiement">
                         <h4>Total :</h4>
-                        <span id="total">0</span>€00
+                        <span id="total"><?php
+                                    if(!empty($_SESSION) && count($_SESSION) >= 2){
+                                        $montant = intval($_SESSION["montant_enfant"]) + intval($_SESSION["montant_adulte"]);
+                                        echo $montant;
+                                    }else{
+                                        echo "0";
+                                    }
+                                 ?></span>€00
                     </div>
                     <!-- Ligne horizontale -->
                     <div id='traitgris'><hr></div>
                     
-                    <a id="lien_paiement" href="https://www.google.fr/">Payer</a>
+                    <button id="lien_paiement" onclick="imprimTickets();">Payer</button>
                     
                 </div>
             </section>
@@ -133,17 +176,17 @@
             <div id="top_footer">
                 <div id="liens">
                     <div id="bloc_liens1">
-                        <a href="evenement.html">Événement</a>
-                        <a href="inscription.html">Inscription</a>
-                        <a href="partenaires.html">Partenaires</a>
+                        <a href="evenement.php">Événement</a>
+                        <a href="inscription.php">Inscription</a>
+                        <a href="partenaires.php">Partenaires</a>
                     </div>
                     <div id="bloc_liens2">
-                        <a href="informations.html">Informations</a>
-                        <a href="galeries.html">Galerie</a>
-                        <a href="faq.html">F.A.Q.</a>
+                        <a href="informations.php">Informations</a>
+                        <a href="galeries.php">Galerie</a>
+                        <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </div>
                 <div id="localisation">
@@ -168,7 +211,7 @@
                 
                 <div id="realisation"><p>Site réalisé par </p><a href="https://www.agence-horizon.fr/"><img src="../images/logo_horizon.png" alt="Logo agence Horizon" /></a></div>
                 
-                <div id="reglements"><p><a href="mentions_legales.html">Mentions légales</a> | <a href="confidentialite.html">Politiques de confidentialité</a> | <a href="cookies.html">Politique des cookies</a><br/>| <a href="ventes.html">Conditions de ventes</a> | <a href="contact.html">Contactez-nous</a></p></div>
+                <div id="reglements"><p><a href="mentions_legales.php">Mentions légales</a> | <a href="confidentialite.php">Politiques de confidentialité</a> | <a href="cookies.php">Politique des cookies</a><br/>| <a href="ventes.php">Conditions de ventes</a> | <a href="contact.php">Contactez-nous</a></p></div>
             </div>
         </footer>
         
