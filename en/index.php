@@ -36,7 +36,7 @@
                     <a href="inscription.php">Registration</a>
                     <a href="partenaires.php">Partners</a>
                     <a href="informations.php">Information</a>
-                    <a href="galeries.php">Galleries</a>
+                    <a href="galeries.php">Gallery</a>
                     <a href="faq.php">F.A.Q.</a>
                     <a href="contact.php">Contact</a>
                 </nav>
@@ -152,7 +152,7 @@
                     </div>
                     <div id="bloc_liens2">
                         <a href="informations.php">Information</a>
-                        <a href="galeries.php">Galleries</a>
+                        <a href="galeries.php">Gallery</a>
                         <a href="faq.php">F.A.Q.</a>
                     </div>
                     <div id="bloc_liens3">
